@@ -2,10 +2,10 @@
   <header class="header">
     <div class="container">
       <ul class="list">
-        <li class="list-item"><a>Main</a></li>
-        <li class="list-item"><a>About me</a></li>
-        <li class="list-item"><a>Skills</a></li>
-        <li class="list-item"><a>Portfolio</a></li>
+        <li class="list-item"><a class="link">Main</a></li>
+        <li class="list-item"><a class="link">About me</a></li>
+        <li class="list-item"><a class="link">Skills</a></li>
+        <li class="list-item"><a class="link">Portfolio</a></li>
       </ul>
       <ContactsComponent />
     </div>
@@ -21,8 +21,8 @@ export default { name: "HeaderComponent", components: { ContactsComponent } };
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: blue;
-  border-radius: 0 0 15px 15px;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid grey;
 }
 .list {
   display: flex;

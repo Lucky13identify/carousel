@@ -2,11 +2,24 @@
 
 body {
   font-family: "Merriweather", serif;
+  color: white;
   margin: 0;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(https://res.cloudinary.com/dici0468p/image/upload/v1698775443/noutbuk_didzhej_oborudovanie_212416_1920x1200_dme1gb.jpg);
 }
 
 li {
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 p {
@@ -21,6 +34,11 @@ h1,
 h2,
 h3 {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Global styles for classes */

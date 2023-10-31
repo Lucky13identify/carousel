@@ -20,11 +20,12 @@ export default {
 <style lang="scss" scoped>
 .projects {
   padding-top: 40px;
-  background-color: red;
+  padding-bottom: 40px;
 }
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 </style>

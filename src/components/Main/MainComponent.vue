@@ -7,14 +7,14 @@
         width="380"
         alt="Dmytro Smirnov photo"
       />
-      <div>
-        <p>Dmytro Smirnov</p>
-        <p>Fullstack developer</p>
-        <p>
+      <div class="hero-info">
+        <p class="hero-name">Dmytro Smirnov</p>
+        <p class="hero-work">Fullstack developer</p>
+        <p class="hero-description">
           Welcome to my resume website! Here, you can learn more about me and
           get a detailed overview of my skills.
         </p>
-        <a href="">Learn more</a>
+        <a class="hero-link" href="">Learn more</a>
       </div>
     </div>
   </section>
@@ -30,11 +30,44 @@ export default {};
   gap: 20px;
 }
 .hero {
-  background-color: red;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .photo {
   border-radius: 50%;
+}
+
+.hero-name {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0px;
+  margin: 0px;
+}
+
+.hero-work {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 130px;
+  letter-spacing: 0px;
+  margin: 0px;
+}
+
+.hero-info {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.hero-description {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin: 0px;
+}
+
+.hero-link {
+  color: red;
 }
 </style>
