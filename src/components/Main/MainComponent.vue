@@ -68,6 +68,13 @@ export default {};
 }
 
 .hero-link {
-  color: red;
+  cursor: pointer;
+  color: rgb(0, 255, 145);
+  padding: 3px;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: red;
+  }
 }
 </style>

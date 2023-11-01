@@ -28,9 +28,11 @@ export default {
 <style lang="scss" scoped>
 .flex-container {
   display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
 }
 .about-me {
   padding-top: 40px;
-  background-color: red;
+  padding-bottom: 40px;
 }
 </style>

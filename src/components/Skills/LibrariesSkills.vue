@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3>Auxiliary libraries.</h3>
-    <ul>
+    <h3 class="header">Auxiliary libraries</h3>
+    <ul class="flex-container">
       <li><p>Firebase</p></li>
       <li><p>Styled Component</p></li>
     </ul>
@@ -12,4 +12,19 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+</style>

@@ -1,18 +1,26 @@
 <template>
   <section class="skills">
     <div class="container">
-      <h2>Tech skills</h2>
+      <h2 class="skills-header">Tech skills</h2>
       <div class="flex-container">
         <BuildersSkills />
         <DatabasesSkills />
         <FeaturesSkills />
-        <LanguagesSkills />
+
         <LibrariesForProjectsSkills />
         <LibrariesSkills />
         <TechSkills />
       </div>
-      <h2>Soft skills</h2>
-      <SoftSkills />
+      <div class="soft-container">
+        <div>
+          <h2 class="skills-header">Soft skills</h2>
+          <SoftSkills />
+        </div>
+        <div>
+          <h2 class="skills-header">Languages</h2>
+          <LanguagesSkills />
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -50,7 +58,23 @@ export default {
 }
 
 .skills {
-  background-color: red;
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.skills-header {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.soft-container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h2>Languages</h2>
-    <ul>
+    <ul class="flex-container">
       <li><p>English - Intermediate</p></li>
       <li><p>Ukrainian - native</p></li>
     </ul>
@@ -12,4 +11,10 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+</style>

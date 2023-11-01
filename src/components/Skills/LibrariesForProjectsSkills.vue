@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3>The main project libraries</h3>
-    <ul>
+    <h3 class="header">The main project libraries</h3>
+    <ul class="flex-container">
       <li><p>React/Redux</p></li>
       <li><p>Vue/Vuex</p></li>
       <li><p>Node</p></li>
@@ -13,4 +13,19 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+</style>

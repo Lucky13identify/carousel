@@ -14,7 +14,10 @@
 
 <script>
 import ContactsComponent from ".././Contacts/ContactsComponent";
-export default { name: "HeaderComponent", components: { ContactsComponent } };
+export default {
+  name: "HeaderComponent",
+  components: { ContactsComponent },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -30,6 +33,15 @@ export default { name: "HeaderComponent", components: { ContactsComponent } };
   margin-right: auto;
 }
 
+.link {
+  cursor: pointer;
+  padding: 3px;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: red;
+  }
+}
 .container {
   display: flex;
 }
