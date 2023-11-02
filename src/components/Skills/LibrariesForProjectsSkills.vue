@@ -2,15 +2,38 @@
   <div>
     <h3 class="header">The main project libraries</h3>
     <ul class="flex-container">
-      <li><p>React/Redux</p></li>
-      <li><p>Vue/Vuex</p></li>
-      <li><p>Node</p></li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#react'"></use>
+        </svg>
+        <p>React/Redux</p>
+      </li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#vue'"></use>
+        </svg>
+        <p>Vue/Vuex</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#node'"></use>
+        </svg>
+        <p>Node</p>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+import icon from "../../assets/icons/symbol-defs.svg";
+
+export default {
+  data() {
+    return {
+      icon,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -27,5 +50,11 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>

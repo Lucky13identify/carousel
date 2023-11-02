@@ -2,11 +2,10 @@
   <header class="header">
     <div class="container">
       <ul class="list">
-        <li class="list-item"><a class="link">Main</a></li>
-        <li class="list-item"><a class="link">About me</a></li>
-        <li class="list-item"><a class="link">Skills</a></li>
-        <li class="list-item"><a class="link">Portfolio</a></li>
+        <HeaderMenu />
       </ul>
+
+      <HeaderSettings />
       <ContactsComponent />
     </div>
   </header>
@@ -14,35 +13,35 @@
 
 <script>
 import ContactsComponent from ".././Contacts/ContactsComponent";
+import HeaderSettings from ".././HeaderSettings/HeaderSettings";
+import HeaderMenu from ".././HeaderMenu/HeaderMenu";
+
 export default {
   name: "HeaderComponent",
-  components: { ContactsComponent },
+  components: {
+    ContactsComponent,
+    HeaderSettings,
+    HeaderMenu,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid grey;
+  align-items: baseline;
 }
 .list {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   margin-right: auto;
 }
 
-.link {
-  cursor: pointer;
-  padding: 3px;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    color: red;
-  }
-}
 .container {
   display: flex;
+  align-items: center;
 }
 </style>

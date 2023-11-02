@@ -2,15 +2,38 @@
   <div>
     <h3 class="header">Additional features</h3>
     <ul class="flex-container">
-      <li><p>Git</p></li>
-      <li><p>Responsive/Adaptive design</p></li>
-      <li><p>REST API</p></li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#git'"></use>
+        </svg>
+        <p>Git</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#ruler'"></use>
+        </svg>
+        <p>Responsive/Adaptive design</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#data'"></use>
+        </svg>
+        <p>REST API</p>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+import icon from "../../assets/icons/symbol-defs.svg";
+
+export default {
+  data() {
+    return {
+      icon,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -27,5 +50,11 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>

@@ -2,14 +2,44 @@
   <div>
     <h3 class="header">Auxiliary libraries</h3>
     <ul class="flex-container">
-      <li><p>Firebase</p></li>
-      <li><p>Styled Component</p></li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#firebase'"></use>
+        </svg>
+        <p>Firebase</p>
+      </li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#styled-components'"></use>
+        </svg>
+        <p>Styled Component</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#socket-io'"></use>
+        </svg>
+        <p>Socket.io</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#sass'"></use>
+        </svg>
+        <p>Sass</p>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+import icon from "../../assets/icons/symbol-defs.svg";
+
+export default {
+  data() {
+    return {
+      icon,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -26,5 +56,11 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>

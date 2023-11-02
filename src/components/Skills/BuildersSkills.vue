@@ -2,14 +2,32 @@
   <div>
     <h3 class="header">Project builders</h3>
     <ul class="flex-container">
-      <li><p>Parcel</p></li>
-      <li><p>Webpack</p></li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#codesandbox'"></use>
+        </svg>
+        <p>Parcel</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#webpack'"></use>
+        </svg>
+        <p>Webpack</p>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+import icon from "../../assets/icons/symbol-defs.svg";
+
+export default {
+  data() {
+    return {
+      icon,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -26,5 +44,11 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>

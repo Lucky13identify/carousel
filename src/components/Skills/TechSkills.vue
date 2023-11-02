@@ -2,16 +2,44 @@
   <div>
     <h3 class="header">The main programming languages</h3>
     <ul class="flex-container">
-      <li><p>HTML5</p></li>
-      <li><p>CSS3</p></li>
-      <li><p>JavaScript</p></li>
-      <li><p>TypeScript</p></li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#html5'"></use>
+        </svg>
+        <p>HTML5</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#css3'"></use>
+        </svg>
+        <p>CSS3</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#javascript'"></use>
+        </svg>
+        <p>JavaScript</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#typescript'"></use>
+        </svg>
+        <p>TypeScript</p>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-export default {};
+import icon from "../../assets/icons/symbol-defs.svg";
+
+export default {
+  data() {
+    return {
+      icon,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -28,5 +56,11 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>
