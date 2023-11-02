@@ -3,7 +3,7 @@
     <div class="container hero-container">
       <img
         class="photo"
-        src="../../../src/assets/my-photo.jpg"
+        src="../../../src/assets/imges/my-photo.jpg"
         width="380"
         alt="Dmytro Smirnov photo"
       />

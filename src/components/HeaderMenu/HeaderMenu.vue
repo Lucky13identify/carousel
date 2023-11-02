@@ -1,8 +1,16 @@
 <template>
-  <li class="list-item"><a class="link">Main</a></li>
-  <li class="list-item"><a class="link">About me</a></li>
-  <li class="list-item"><a class="link">Skills</a></li>
-  <li class="list-item"><a class="link">Portfolio</a></li>
+  <li class="list-item">
+    <RouterLink class="link" to="/">Main</RouterLink>
+  </li>
+  <li class="list-item">
+    <RouterLink class="link" to="/about">About me</RouterLink>
+  </li>
+  <li class="list-item">
+    <RouterLink class="link" to="/skills">Skills</RouterLink>
+  </li>
+  <li class="list-item">
+    <RouterLink class="link" to="/projects">Projects</RouterLink>
+  </li>
 </template>
 
 <script>

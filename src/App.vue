@@ -1,17 +1,22 @@
 <template>
   <HeaderComponent />
+  <RouterView />
   <!-- <AboutMePage /> -->
   <!-- <MainPage /> -->
-  <SkillsPage />
+  <!-- <SkillsPage /> -->
+  <!-- <teleport to="#modal">
+    <ModalWindow />
+  </teleport> -->
   <!-- <ProjectsPage /> -->
 </template>
 
 <script>
 import HeaderComponent from "./components/Header/HeaderComponent.vue";
 // import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
-import SkillsPage from "./pages/Skills/SkillsPage.vue";
+// import SkillsPage from "./pages/Skills/SkillsPage.vue";
 // import MainPage from "./pages/MainPage/MainPage.vue";
 // import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
+// import ModalWindow from "./components/Modal/ModalWindow";
 
 export default {
   name: "App",
@@ -19,8 +24,9 @@ export default {
     HeaderComponent,
     // ProjectsPage,
     // AboutMePage,
-    SkillsPage,
+    // SkillsPage,
     // MainPage,
+    // ModalWindow,
   },
 };
 </script>
