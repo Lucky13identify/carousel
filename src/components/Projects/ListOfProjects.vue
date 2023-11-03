@@ -5,19 +5,26 @@
         class="project-img"
         src="https://res.cloudinary.com/dici0468p/image/upload/v1698775438/noutbuk_klavishi_svechenie_170138_1920x1200_iibdhn.jpg"
         alt=""
-      />
-      <div class="info-container">
-        <h2 class="project-name">Project 1</h2>
-        <div class="flex-container">
-          <button class="project-button" type="button">Learn more</button>
-        </div>
-      </div></a
-    >
+    /></a>
+    <div class="info-container">
+      <h2 class="project-name">Project 1</h2>
+      <div class="flex-container">
+        <button class="project-button" type="button" @click="openModal">
+          Learn more
+        </button>
+      </div>
+    </div>
   </li>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    openModal() {
+      this.$store.commit("openModal", true);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -5,6 +5,7 @@ import SkillsPage from "./pages/Skills/SkillsPage.vue";
 import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
 import MainPage from "./pages/MainPage/MainPage.vue";
 import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
+import store from "./vuex/store";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,4 +17,4 @@ const router = createRouter({
   ],
 });
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).use(store).mount("#app");

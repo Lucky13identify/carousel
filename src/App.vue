@@ -4,9 +4,9 @@
   <!-- <AboutMePage /> -->
   <!-- <MainPage /> -->
   <!-- <SkillsPage /> -->
-  <!-- <teleport to="#modal">
-    <ModalWindow />
-  </teleport> -->
+  <teleport to="#modal">
+    <ModalWindow v-if="$store.state.isModalOpen" />
+  </teleport>
   <!-- <ProjectsPage /> -->
 </template>
 
@@ -16,7 +16,7 @@ import HeaderComponent from "./components/Header/HeaderComponent.vue";
 // import SkillsPage from "./pages/Skills/SkillsPage.vue";
 // import MainPage from "./pages/MainPage/MainPage.vue";
 // import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
-// import ModalWindow from "./components/Modal/ModalWindow";
+import ModalWindow from "./components/Modal/ModalWindow";
 
 export default {
   name: "App",
@@ -26,7 +26,7 @@ export default {
     // AboutMePage,
     // SkillsPage,
     // MainPage,
-    // ModalWindow,
+    ModalWindow,
   },
 };
 </script>

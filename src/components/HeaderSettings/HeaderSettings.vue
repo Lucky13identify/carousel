@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <button type="button" class="light">
+    <button type="button" class="light" @click="onChangeTheme">
       <svg class="icon" height="25 " width="25">
         <use :href="icon + '#brightness-contrast'"></use>
       </svg>
     </button>
     <div>
-      <button type="button">
+      <button type="button" @click="onChangeLanguage">
         <svg class="icon" height="15 " width="15">
           <use :href="icon + '#language'"></use>
         </svg>
@@ -23,6 +23,17 @@ export default {
     return {
       icon,
     };
+  },
+  methods: {
+    onChangeTheme() {
+      this.isThemeDark = !this.isThemeDark;
+      this.$store.commit("changeTheme", this.isThemeDark);
+    },
+
+    onChangeLanguage() {
+      this.isLanguageEng = !this.isLanguageEng;
+      this.$store.commit("changeLanguage", this.isLanguageEng);
+    },
   },
 };
 </script>

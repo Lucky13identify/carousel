@@ -1,8 +1,8 @@
 <template>
-  <div class="overlay">
+  <div class="overlay" @click="closeModalOverlay">
     <div class="modal">
       <div class="button-container">
-        <button class="close" type="button">
+        <button class="close" type="button" @click="closeModalButton">
           <svg class="icon" height="20 " width="20">
             <use :href="icon + '#cross'"></use>
           </svg>
@@ -21,6 +21,28 @@ export default {
     return {
       icon,
     };
+  },
+  methods: {
+    closeModalOverlay(e) {
+      if (e.target.className === "overlay") {
+        this.$store.commit("openModal", false);
+      }
+    },
+    closeModalButton() {
+      this.$store.commit("openModal", false);
+    },
+
+    onEscCloseModal(event) {
+      if (event.key === "Escape") {
+        this.closeModalButton();
+      }
+    },
+  },
+  created() {
+    window.addEventListener("keydown", this.onEscCloseModal);
+  },
+  beforeUnmount() {
+    window.removeEventListener("keydown", this.onEscCloseModal);
   },
 };
 </script>
@@ -42,11 +64,11 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 469px;
-  min-height: 500px;
+  width: 600px;
+  min-height: 600px;
   border-radius: 15px;
   background: #fff;
-  padding: 15px 37px 40px 35px;
+  padding: 15px;
 }
 
 .close {
