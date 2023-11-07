@@ -1,5 +1,5 @@
 <template>
-  <li class="project">
+  <li class="project" :style="themeStyles">
     <a class="project-link" href="">
       <img
         class="project-img"
@@ -24,6 +24,18 @@ export default {
       this.$store.commit("openModal", true);
     },
   },
+  computed: {
+    themeStyles() {
+      return {
+        "--background-color": this.$store.state.isThemeDark
+          ? "none"
+          : "#d3d3d3",
+        "--border-color": this.$store.state.isThemeDark
+          ? "1px solid grey"
+          : "none",
+      };
+    },
+  },
 };
 </script>
 
@@ -32,7 +44,8 @@ export default {
   backdrop-filter: blur(10px);
   width: 350px;
   height: 300px;
-  border: 1px solid grey;
+  border: var(--border-color);
+  background-color: var(--background-color);
   border-radius: 15px;
   padding: 10px;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);

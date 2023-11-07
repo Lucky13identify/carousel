@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Goose Track",
+    "description": "This is the task tracker with personal to-do list. The project provides for the possibility of user registration, authentication and authorization. In addition, users can create and track their tasks, assign them by completion status, view their completion statistics over a period of time, and edit and delete their tasks.",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Styled components",
+      "axios",
+      "Figma",
+      "Git",
+      "GitHub"
+    ],
+    "img": "https://res.cloudinary.com/dici0468p/image/upload/v1697555042/652ea21d16e625f96184ca71.jpg",
+    "repo_link": "https://github.com/Lucky13identify/teamproject-frontend-1",
+    "page_link": "https://hannavakulenko.github.io/teamproject-frontend-1/",
+    "backend_link": "https://github.com/Lucky13identify/teamproject-backend-1"
+  },
+  {
+    "id": 2,
+    "name": "Car catalog",
+    "description": "This is the task tracker with personal to-do list. The project provides for the possibility of user registration, authentication and authorization. In addition, users can create and track their tasks, assign them by completion status, view their completion statistics over a period of time, and edit and delete their tasks.",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Styled components",
+      "axios",
+      "Figma",
+      "Git",
+      "GitHub"
+    ],
+    "img": "https://res.cloudinary.com/dici0468p/image/upload/v1691769860/cld-sample-2.jpg",
+    "repo_link": "https://github.com/Lucky13identify/GoIT_tweets",
+    "page_link": "https://lucky13identify.github.io/GoIT_tweets/",
+    "backend_link": "no backend"
+  }
+]

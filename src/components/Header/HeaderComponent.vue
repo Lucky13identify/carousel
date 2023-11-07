@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" :style="themeStyles">
     <div class="container">
       <ul class="list">
         <HeaderMenu />
@@ -23,6 +23,21 @@ export default {
     HeaderSettings,
     HeaderMenu,
   },
+  computed: {
+    themeStyles() {
+      return {
+        paddingTop: "30px",
+        paddingBottom: "30px",
+        backgroundColor: this.$store.state.isThemeDark
+          ? "rgba(30, 30, 30, 0.6)"
+          : "#2a9c68",
+        backdropFilter: "blur(10px)",
+        borderBottom: "1px solid grey",
+        alignItems: "baseline",
+        color: "white",
+      };
+    },
+  },
 };
 </script>
 
@@ -30,6 +45,7 @@ export default {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: rgba(80, 80, 80, 0.4);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid grey;
   align-items: baseline;

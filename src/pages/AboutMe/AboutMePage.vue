@@ -1,13 +1,15 @@
 <template>
-  <section class="about-me">
-    <div class="container">
-      <AboutMe />
-      <div class="flex-container">
-        <div><EducationExperience /></div>
-        <div><WorkExperience /></div>
+  <div class="container-style" :style="themeStyles">
+    <section class="about-me">
+      <div class="container">
+        <AboutMe />
+        <div class="flex-container">
+          <div><EducationExperience /></div>
+          <div><WorkExperience /></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -22,6 +24,17 @@ export default {
     EducationExperience,
     WorkExperience,
   },
+  computed: {
+    themeStyles() {
+      return {
+        backgroundColor: this.$store.state.isThemeDark
+          ? "rgba(40, 40, 40, 0.8)"
+          : "rgba(255, 255, 255)",
+        backdropFilter: "blur(10px)",
+        color: this.$store.state.isThemeDark ? "white" : "black",
+      };
+    },
+  },
 };
 </script>
 
@@ -34,5 +47,10 @@ export default {
 .about-me {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.container-style {
+  background-color: rgba(80, 80, 80, 0.4);
+  backdrop-filter: blur(10px);
 }
 </style>

@@ -1,28 +1,30 @@
 <template>
-  <section class="skills">
-    <div class="container">
-      <h2 class="skills-header">Tech skills</h2>
-      <div class="flex-container">
-        <BuildersSkills />
-        <DatabasesSkills />
-        <FeaturesSkills />
+  <div class="container-style" :style="themeStyles">
+    <section class="skills">
+      <div class="container">
+        <h2 class="skills-header">Tech skills</h2>
+        <div class="flex-container">
+          <BuildersSkills />
+          <DatabasesSkills />
+          <FeaturesSkills />
 
-        <LibrariesForProjectsSkills />
-        <LibrariesSkills />
-        <TechSkills />
-      </div>
-      <div class="soft-container">
-        <div>
-          <h2 class="skills-header">Soft skills</h2>
-          <SoftSkills />
+          <LibrariesForProjectsSkills />
+          <LibrariesSkills />
+          <TechSkills />
         </div>
-        <div>
-          <h2 class="skills-header">Languages</h2>
-          <LanguagesSkills />
+        <div class="soft-container">
+          <div>
+            <h2 class="skills-header">Soft skills</h2>
+            <SoftSkills />
+          </div>
+          <div>
+            <h2 class="skills-header">Languages</h2>
+            <LanguagesSkills />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -46,6 +48,16 @@ export default {
     LibrariesSkills,
     SoftSkills,
     TechSkills,
+  },
+  computed: {
+    themeStyles() {
+      return {
+        backgroundColor: this.$store.state.isThemeDark
+          ? "rgba(40, 40, 40, 0.8)"
+          : "rgba(255, 255, 255)",
+        color: this.$store.state.isThemeDark ? "white" : "black",
+      };
+    },
   },
 };
 </script>
@@ -76,5 +88,10 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+}
+
+.container-style {
+  background-color: rgba(80, 80, 80, 0.4);
+  backdrop-filter: blur(10px);
 }
 </style>

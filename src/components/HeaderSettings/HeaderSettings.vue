@@ -1,13 +1,23 @@
 <template>
   <div class="container">
-    <button type="button" class="light" @click="onChangeTheme">
+    <button
+      type="button"
+      class="light"
+      :style="themeStyles"
+      @click="onChangeTheme"
+    >
       <svg class="icon" height="25 " width="25">
         <use :href="icon + '#brightness-contrast'"></use>
       </svg>
     </button>
     <div>
-      <button type="button" @click="onChangeLanguage">
-        <svg class="icon" height="15 " width="15">
+      <button
+        type="button"
+        class="light"
+        :style="themeStyles"
+        @click="onChangeLanguage"
+      >
+        <svg class="icon" height="25 " width="25">
           <use :href="icon + '#language'"></use>
         </svg>
       </button>
@@ -35,6 +45,17 @@ export default {
       this.$store.commit("changeLanguage", this.isLanguageEng);
     },
   },
+  computed: {
+    themeStyles() {
+      return {
+        "--bg-color": this.$store.state.isThemeDark
+          ? "rgba(30, 30, 30, 0.6)"
+          : "white",
+        "--fill-color": this.$store.state.isThemeDark ? "gold" : "darkblue",
+        "--color": this.$store.state.isThemeDark ? "gold" : "white",
+      };
+    },
+  },
 };
 </script>
 
@@ -42,7 +63,7 @@ export default {
 .container {
   width: 300px;
   padding: 0;
-  gap: 60px;
+  gap: 30px;
   /* margin-left: 200px; */
 }
 
@@ -52,8 +73,17 @@ export default {
   align-items: center;
   border-radius: 50%;
   border: none;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  background-color: transparent;
+  fill: var(--color);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--bg-color);
+    fill: var(--fill-color);
+  }
 }
 </style>
