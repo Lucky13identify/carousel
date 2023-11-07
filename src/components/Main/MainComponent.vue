@@ -8,13 +8,19 @@
         alt="Dmytro Smirnov photo"
       />
       <div class="hero-info">
-        <p class="hero-name">Dmytro Smirnov</p>
-        <p class="hero-work">Fullstack developer</p>
-        <p class="hero-description">
+        <p class="hero-name animate__animated animate__backInRight">
+          Dmytro Smirnov
+        </p>
+        <p class="hero-work animate__animated animate__backInRight">
+          Fullstack developer
+        </p>
+        <p class="hero-description animate__animated animate__backInRight">
           Welcome to my resume website! Here, you can learn more about me and
           get a detailed overview of my skills.
         </p>
-        <a class="hero-link" href="">Learn more</a>
+        <a class="hero-link animate__animated animate__backInRight" href=""
+          >Learn more</a
+        >
       </div>
     </div>
   </section>
@@ -51,6 +57,7 @@ export default {};
   line-height: 130px;
   letter-spacing: 0px;
   margin: 0px;
+  animation-delay: 1s;
 }
 
 .hero-info {
@@ -59,12 +66,13 @@ export default {};
 }
 
 .hero-description {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0px;
   margin: 0px;
+  animation-delay: 2s;
 }
 
 .hero-link {
@@ -72,11 +80,22 @@ export default {};
   background-color: #2a9c68;
   color: white;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 12px;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0; // Начальное состояние элемента
+  animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) 4s forwards; // 4s задержка перед анимацией
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   &:hover {
-    background-color: red;
+    background-color: #236547;
   }
 }
 </style>

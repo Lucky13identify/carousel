@@ -3,6 +3,15 @@
     <section class="about-me">
       <div class="container">
         <AboutMe />
+        <div class="video-container">
+          <video controls width="640" height="360">
+            <source
+              src="../../assets/video/Dmytro_Smirnov.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div class="flex-container">
           <div><EducationExperience /></div>
           <div><WorkExperience /></div>
@@ -52,5 +61,13 @@ export default {
 .container-style {
   background-color: rgba(80, 80, 80, 0.4);
   backdrop-filter: blur(10px);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
 }
 </style>

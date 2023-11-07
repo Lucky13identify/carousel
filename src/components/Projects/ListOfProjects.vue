@@ -33,6 +33,9 @@ export default {
         "--border-color": this.$store.state.isThemeDark
           ? "1px solid grey"
           : "none",
+        "--shadow": this.$store.state.isThemeDark
+          ? "0 20px 16px -16px rgba(42, 156, 104, 0.6)"
+          : "0 20px 16px -16px rgba(0, 0, 0, 0.6)",
       };
     },
   },
@@ -51,7 +54,7 @@ export default {
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    box-shadow: 7px 8px 5px 0px rgba(55, 186, 46, 0.74);
+    box-shadow: var(--shadow);
   }
 }
 
@@ -76,13 +79,13 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  background: rgb(52, 112, 255);
+  background: #2a9c68;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease-in-out 0s;
 
   &:hover {
-    background: rgb(11, 68, 205);
+    background: #236547;
   }
 }
 

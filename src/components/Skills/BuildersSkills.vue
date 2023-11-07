@@ -9,7 +9,7 @@
         <p>Parcel</p>
       </li>
       <li class="item">
-        <svg class="icon" height="30 " width="30">
+        <svg height="30 " width="30">
           <use :href="icon + '#webpack'"></use>
         </svg>
         <p>Webpack</p>
@@ -50,5 +50,9 @@ export default {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.icon {
+  fill: gold;
 }
 </style>

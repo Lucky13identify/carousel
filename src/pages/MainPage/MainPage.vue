@@ -28,6 +28,6 @@ export default {
 .container-style {
   background-color: rgba(80, 80, 80, 0.4);
   backdrop-filter: blur(10px);
-  padding-bottom: 250px;
+  height: 100vh;
 }
 </style>

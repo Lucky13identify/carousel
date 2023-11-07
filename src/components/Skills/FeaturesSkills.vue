@@ -9,13 +9,13 @@
         <p>Git</p>
       </li>
       <li class="item">
-        <svg class="icon" height="30 " width="30">
+        <svg class="icon-design" height="30 " width="30">
           <use :href="icon + '#ruler'"></use>
         </svg>
         <p>Responsive/Adaptive design</p>
       </li>
       <li class="item">
-        <svg class="icon" height="30 " width="30">
+        <svg class="icon-database" height="30 " width="30">
           <use :href="icon + '#data'"></use>
         </svg>
         <p>REST API</p>
@@ -56,5 +56,13 @@ export default {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.icon-design {
+  fill: blue;
+}
+
+.icon-database {
+  fill: purple;
 }
 </style>
