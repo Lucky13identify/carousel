@@ -2,12 +2,14 @@
   <li class="project" :style="themeStyles">
     <a class="project-link" href="">
       <img
+        width="350"
+        height="210"
         class="project-img"
-        src="https://res.cloudinary.com/dici0468p/image/upload/v1698775438/noutbuk_klavishi_svechenie_170138_1920x1200_iibdhn.jpg"
+        :src="project.img"
         alt=""
     /></a>
     <div class="info-container">
-      <h2 class="project-name">Project 1</h2>
+      <h2 class="project-name">{{ project.name }}</h2>
       <div class="flex-container">
         <button class="project-button" type="button" @click="openModal">
           Learn more
@@ -24,6 +26,7 @@ export default {
       this.$store.commit("openModal", true);
     },
   },
+  props: ["project"],
   computed: {
     themeStyles() {
       return {

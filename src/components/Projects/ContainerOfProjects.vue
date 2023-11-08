@@ -2,7 +2,11 @@
   <section class="projects">
     <div class="container">
       <ul class="flex-container">
-        <ListOfProjects />
+        <ListOfProjects
+          v-for="project in this.$store.state.projects"
+          :key="project.id"
+          :project="project"
+        />
       </ul>
     </div>
   </section>
