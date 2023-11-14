@@ -2,5 +2,48 @@
   "home_navigation": "Main",
   "about_navigation": "About",
   "skills_navigation": "Skills",
-  "projects_navigation": "Projects"
+  "projects_navigation": "Projects",
+
+  "name_main": "Dmytro Smirnov",
+  "post_main": "Fullstack developer",
+  "title_main": "Welcome to my resume website! Here, you can learn more about me, explore my projects, and get a detailed overview of my skills.",
+  "button_main": "Learn more",
+
+  "header_about": "Давайте знайомитися!",
+  "text_about": "Мене звуть Дмитро, я fullstack розробник з досвідом у різних технологіях. Я успішно завершив проекти, охоплюючи різні бібліотеки, технології та фреймворки, включаючи цей веб-сайт, який ви зараз переглядаєте. Те, що відокремлює мене, - це настійливість і невідступна визначеність досягти успіху. Я завжди виконую роботу завчасно і гарантую, що проекти завершуються вчасно або навіть раніше графіку, оскільки чудво знаю що таке дедлайни. Моя здатність працювати  в команді та ефективно управляти часом гарантує, що завдання виконуються з максимальною результативнісю. Я не зупиняюся, поки робота не буде завершена. Давайте будувати майбутнє разом і досягати великих результатів!",
+
+  "education_header_about": "Освіта",
+  "goit_about": "IT школа 'Goit'",
+  "goit_description_about": "Fullstack розробник - мій сертифікат",
+  "franko_about": "Львівський національний університет імені Івана Франка",
+  "franko_description_about": "Магістр бухгалтерського обліку та оподаткування.",
+  "krok_about": "Управлінная проектами, університет 'КРОК'",
+  "krok_description_about": "Планування та реалізація проекту. Практичні заняття в Microsoft Project.",
+  "ntu_about": "Національний транспортний університет",
+  "ntu_description_about": "Бакалавр за спеціальністю логістика.",
+  "ktek_about": "Київський транспортно-економічний коледж Національного транспортного університету",
+  "ktek_description_about": "Молодший спеціаліст, організація транспортних послуг на автомобільному транспорті, червоний диплом",
+
+  "work_header_about": "Досвід роботи",
+  "crowe_about": "AC CROWE Україна",
+  "crowe_position_about": "Бухгалтер-ревізор A2",
+  "crowe_description_about": "Проектна робота з підготовки фінансової звітності, спілкування з клієнтом.",
+  "crowe_achievements_about": "Готував та навчав стажерів до роботи над проектами",
+  "baker_about": "Бейкер тіллі Україна",
+  "baker_position_about": "Cтажер, бухгалтер-ревізор A1",
+  "baker_description_about": "Допомога в складанні фінансової звітності за МСФЗ. Спілкування з клієнтом. Командна робота над проектами.",
+
+  "position": "Посада",
+  "description": "Опис",
+  "achievements": "Досягнення",
+
+  "tech_header_skills": "Технічні скіли",
+  "languages_header_skills": "Мови",
+  "eng_language": "Англійська - середня",
+  "ua_language": "Українська - носій",
+  "soft_header_skills": "Софт скіли",
+  "strong_soft": "Вольовничість",
+  "goal_soft": "Цілеспрямований",
+  "team_soft": "Вміння працювати в команді",
+  "deadline_soft": "Дотримання дедлайнів"
 }

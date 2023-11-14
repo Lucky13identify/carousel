@@ -37,13 +37,13 @@
   "description": "Опис",
   "achievements": "Досягнення",
 
-  "tech_header_skills": "Проекти",
-  "languages_header_skills": "Проекти",
-  "eng_language": "Проекти",
-  "ua_language": "Проекти",
-  "soft_header_skills": "Проекти",
-  "strong_soft": "Проекти",
-  "goal_soft": "Проекти",
-  "team_soft": "Проекти",
-  "deadline_soft": "Проекти"
+  "tech_header_skills": "Технічні скіли",
+  "languages_header_skills": "Мови",
+  "eng_language": "Англійська - середня",
+  "ua_language": "Українська - носій",
+  "soft_header_skills": "Софт скіли",
+  "strong_soft": "Вольовничість",
+  "goal_soft": "Цілеспрямований",
+  "team_soft": "Вміння працювати в команді",
+  "deadline_soft": "Дотримання дедлайнів"
 }
