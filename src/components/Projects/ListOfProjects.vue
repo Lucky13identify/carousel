@@ -1,13 +1,15 @@
 <template>
   <li class="project" :style="themeStyles">
     <a class="project-link" href="">
-      <img
-        width="350"
-        height="210"
-        class="project-img"
-        :src="project.img"
-        alt=""
-    /></a>
+      <div class="img-container">
+        <img
+          width="350"
+          height="210"
+          class="project-img"
+          :src="project.img"
+          alt=""
+        /></div
+    ></a>
     <div class="info-container">
       <h2 class="project-name">{{ project.name }}</h2>
       <div class="flex-container">
@@ -20,10 +22,19 @@
 </template>
 
 <script>
+import ModalWindow from "../Modal/ModalWindow.vue";
+
 export default {
+  data() {
+    return {
+      ModalWindow,
+    };
+  },
+
   methods: {
     openModal() {
       this.$store.commit("openModal", true);
+      this.$store.dispatch("fetchProjectFromServer", this.project.id);
     },
   },
   props: ["project"],
@@ -49,7 +60,7 @@ export default {
 .project {
   backdrop-filter: blur(10px);
   width: 350px;
-  height: 300px;
+  height: 280px;
   border: var(--border-color);
   background-color: var(--background-color);
   border-radius: 15px;
@@ -63,6 +74,7 @@ export default {
 
 .project-img {
   border-radius: 10px;
+  width: 800px;
 }
 
 .info-container {
@@ -71,6 +83,13 @@ export default {
   margin-left: 20px;
   margin-top: 10px;
   gap: 10px;
+}
+
+.img-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-button {

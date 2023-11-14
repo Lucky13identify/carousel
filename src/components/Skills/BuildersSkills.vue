@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="header">Project builders</h3>
+    <h3 class="header">Bundlers</h3>
     <ul class="flex-container">
       <li class="item">
         <svg class="icon" height="30 " width="30">

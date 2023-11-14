@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="header">The main programming languages</h3>
+    <h3 class="header">Web Technologies</h3>
     <ul class="flex-container">
       <li class="item">
         <svg class="icon" height="30 " width="30">

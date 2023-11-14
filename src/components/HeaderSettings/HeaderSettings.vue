@@ -10,16 +10,22 @@
         <use :href="icon + '#brightness-contrast'"></use>
       </svg>
     </button>
-    <div>
+    <div class="flag-container">
       <button
         type="button"
-        class="light"
+        class="flag"
         :style="themeStyles"
-        @click="onChangeLanguage"
+        @click="changeLanguage('en')"
       >
-        <svg class="icon" height="25 " width="25">
-          <use :href="icon + '#language'"></use>
-        </svg>
+        <span class="fi fi-gb"></span>
+      </button>
+      <button
+        type="button"
+        class="flag"
+        :style="themeStyles"
+        @click="changeLanguage('ua')"
+      >
+        <span class="fi fi-ua"></span>
       </button>
     </div>
   </div>
@@ -27,6 +33,7 @@
 
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 export default {
   data() {
@@ -40,9 +47,9 @@ export default {
       this.$store.commit("changeTheme", this.isThemeDark);
     },
 
-    onChangeLanguage() {
-      this.isLanguageEng = !this.isLanguageEng;
-      this.$store.commit("changeLanguage", this.isLanguageEng);
+    changeLanguage(lang) {
+      console.log(this.$i18n.availableLocales);
+      this.$i18n.locale = lang;
     },
   },
   computed: {
@@ -65,6 +72,22 @@ export default {
   padding: 0;
   gap: 30px;
   /* margin-left: 200px; */
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.flag-container {
+  display: flex;
+  gap: 1px;
 }
 
 .light {

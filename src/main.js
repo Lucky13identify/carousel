@@ -6,6 +6,18 @@ import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
 import MainPage from "./pages/MainPage/MainPage.vue";
 import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
 import store from "./vuex/store";
+import { createI18n } from "vue-i18n";
+
+// import en from "./languages/en.json";
+// import ua from "./languages/ua.json";
+
+const i18n = createI18n({
+  locale: "ua",
+  messages: {
+    en: require("./languages/en.json"),
+    ua: require("./languages/ua.json"),
+  },
+});
 
 const router = createRouter({
   history: createWebHistory(),
@@ -17,4 +29,4 @@ const router = createRouter({
   ],
 });
 
-createApp(App).use(router).use(store).mount("#app");
+createApp(App).use(router).use(store).use(i18n).mount("#app");

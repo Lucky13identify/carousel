@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="header">Additional features</h3>
+    <h3 class="header">Additions</h3>
     <ul class="flex-container">
       <li class="item">
         <svg height="30 " width="30">

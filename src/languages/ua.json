@@ -1,0 +1,46 @@
+{
+  "home_navigation": "Головна",
+  "about_navigation": "Про мене",
+  "skills_navigation": "Навички",
+  "projects_navigation": "Проекти",
+
+  "name_main": "Дмитро Смірнов",
+  "post_main": "Fullstack розробник",
+  "title_main": "Ласкаво просимо на мій веб-сайт резюме! Тут ви можете дізнатися більше про мене, мої проекти та отримати детальний огляд моїх навичок.",
+  "button_main": "Детальніше",
+
+  "header_about": "Давайте знайомитися!",
+  "text_about": "Проекти",
+  "education_header_about": "Проекти",
+  "work_header_about": "Проекти",
+
+  "goit_about": "Проекти",
+  "goit_description_about": "Проекти",
+  "franko_about": "Проекти",
+  "franko_description_about": "Проекти",
+  "krok_about": "Проекти",
+  "krok_description_about": "Проекти",
+  "ntu_about": "Проекти",
+  "ntu_description_about": "Проекти",
+  "ktek_about": "Проекти",
+  "ktek_description_about": "Проекти",
+
+  "crowe_about": "Проекти",
+  "crowe_description_about": "Проекти",
+  "baker_about": "Проекти",
+  "baker_description_about": "Проекти",
+
+  "position": "Проекти",
+  "description": "Проекти",
+  "achievements": "Проекти",
+
+  "tech_header_skills": "Проекти",
+  "languages_header_skills": "Проекти",
+  "eng_language": "Проекти",
+  "ua_language": "Проекти",
+  "soft_header_skills": "Проекти",
+  "strong_soft": "Проекти",
+  "goal_soft": "Проекти",
+  "team_soft": "Проекти",
+  "deadline_soft": "Проекти"
+}

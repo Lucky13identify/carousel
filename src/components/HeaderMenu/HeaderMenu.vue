@@ -1,6 +1,8 @@
 <template>
   <li class="list-item">
-    <RouterLink :style="themeStyles" class="link" to="/">Main</RouterLink>
+    <RouterLink :style="themeStyles" class="link" to="/">{{
+      $t("home_navigation")
+    }}</RouterLink>
   </li>
   <li class="list-item">
     <RouterLink :style="themeStyles" class="link" to="/about"

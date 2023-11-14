@@ -18,9 +18,11 @@
           Welcome to my resume website! Here, you can learn more about me and
           get a detailed overview of my skills.
         </p>
-        <a class="hero-link animate__animated animate__backInRight" href=""
-          >Learn more</a
-        >
+        <router-link
+          class="hero-link animate__animated animate__backInRight"
+          to="/about"
+          >Learn more
+        </router-link>
       </div>
     </div>
   </section>

@@ -1,11 +1,12 @@
 import { createStore } from "vuex";
-import { getAllProjects } from "./operations";
+import { getAllProjects, setOneProject } from "./operations";
 // import axios from "axios";
 
 const store = createStore({
   state() {
     return {
       projects: [],
+      oneProject: {},
       isModalOpen: false,
       isThemeDark: false,
       isLanguageEng: false,
@@ -24,6 +25,9 @@ const store = createStore({
     setServerData(state, payload) {
       state.projects = payload;
     },
+    setOneProject(state, payload) {
+      state.oneProject = payload;
+    },
   },
   actions: {
     fetchDataFromServer({ commit }) {
@@ -37,6 +41,14 @@ const store = createStore({
         .catch((error) => {
           console.error("Ошибка при запросе данных с сервера:", error);
         });
+    },
+    async fetchProjectFromServer({ commit }, projectId) {
+      try {
+        const response = await setOneProject(projectId);
+        commit("setOneProject", response);
+      } catch (error) {
+        console.error("Ошибка при запросе данных с сервера:", error);
+      }
     },
   },
 });
