@@ -39,19 +39,31 @@ export default {
   data() {
     return {
       icon,
+      isThemeDark: JSON.parse(localStorage.getItem("isThemeDark")) || false,
     };
   },
   methods: {
     onChangeTheme() {
       this.isThemeDark = !this.isThemeDark;
       this.$store.commit("changeTheme", this.isThemeDark);
+      localStorage.setItem("isThemeDark", JSON.stringify(this.isThemeDark));
     },
 
     changeLanguage(lang) {
-      console.log(this.$i18n.availableLocales);
       this.$i18n.locale = lang;
+      // запись текущего языка в локальное хранилище
+      localStorage.setItem("currentLanguage", lang);
+    },
+
+    created() {
+      // установка текущего языка из локального хранилища при создании компонента
+      const storedLanguage = localStorage.getItem("currentLanguage");
+      if (storedLanguage) {
+        this.$i18n.locale = storedLanguage;
+      }
     },
   },
+
   computed: {
     themeStyles() {
       return {

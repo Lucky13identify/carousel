@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="header">Libraries</h3>
+    <h3 class="header">{{ $t("work_skills") }}</h3>
     <ul class="flex-container">
       <li class="item">
         <svg height="30 " width="30">
@@ -25,6 +25,24 @@
           <use :href="icon + '#sass'"></use>
         </svg>
         <p>Sass</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#xing2'"></use>
+        </svg>
+        <p>Axios</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#cloud-rain'"></use>
+        </svg>
+        <p>Cloudinary</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#document-file-css'"></use>
+        </svg>
+        <p>Animate.css</p>
       </li>
     </ul>
   </div>

@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 import { getAllProjects, setOneProject } from "./operations";
-// import axios from "axios";
+
+const storedTheme = localStorage.getItem("isThemeDark");
 
 const store = createStore({
   state() {
@@ -8,7 +9,7 @@ const store = createStore({
       projects: [],
       oneProject: {},
       isModalOpen: false,
-      isThemeDark: false,
+      isThemeDark: JSON.parse(storedTheme),
       isLanguageEng: false,
     };
   },

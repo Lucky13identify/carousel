@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="header">Web Technologies</h3>
+    <h3 class="header">{{ $t("web_skills") }}</h3>
     <ul class="flex-container">
       <li class="item">
         <svg class="icon" height="30 " width="30">
@@ -25,6 +25,24 @@
           <use :href="icon + '#typescript'"></use>
         </svg>
         <p>TypeScript</p>
+      </li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#react'"></use>
+        </svg>
+        <p>React/Redux</p>
+      </li>
+      <li class="item">
+        <svg height="30 " width="30">
+          <use :href="icon + '#vue'"></use>
+        </svg>
+        <p>Vue/Vuex</p>
+      </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#node'"></use>
+        </svg>
+        <p>Node</p>
       </li>
     </ul>
   </div>

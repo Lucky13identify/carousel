@@ -1,5 +1,5 @@
 {
-  "home_navigation": "Main",
+  "home_navigation": "Home",
   "about_navigation": "About",
   "skills_navigation": "Skills",
   "projects_navigation": "Projects",
@@ -38,6 +38,12 @@
   "achievements": "Achievements",
 
   "tech_header_skills": "Teck skills",
+  "bundlers_skills": "Project bundlers",
+  "databases_skills": "Databases",
+  "additions_skills": "Additions",
+  "vcs_skills": "Version control systems",
+  "work_skills": "Work with",
+  "web_skills": "Web technologies",
   "languages_header_skills": "Languages",
   "eng_language": "English - intermediate",
   "ua_language": "Ukrainian - native",

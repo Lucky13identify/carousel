@@ -1,24 +1,12 @@
 <template>
   <div>
-    <h3 class="header">The main project libraries</h3>
+    <h3 class="header">{{ $t("vcs_skills") }}</h3>
     <ul class="flex-container">
       <li class="item">
         <svg height="30 " width="30">
-          <use :href="icon + '#react'"></use>
+          <use :href="icon + '#git'"></use>
         </svg>
-        <p>React/Redux</p>
-      </li>
-      <li class="item">
-        <svg height="30 " width="30">
-          <use :href="icon + '#vue'"></use>
-        </svg>
-        <p>Vue/Vuex</p>
-      </li>
-      <li class="item">
-        <svg class="icon" height="30 " width="30">
-          <use :href="icon + '#node'"></use>
-        </svg>
-        <p>Node</p>
+        <p>Git</p>
       </li>
     </ul>
   </div>

@@ -1,13 +1,7 @@
 <template>
   <div>
-    <h3 class="header">Additions</h3>
+    <h3 class="header">{{ $t("additions_skills") }}</h3>
     <ul class="flex-container">
-      <li class="item">
-        <svg height="30 " width="30">
-          <use :href="icon + '#git'"></use>
-        </svg>
-        <p>Git</p>
-      </li>
       <li class="item">
         <svg class="icon-design" height="30 " width="30">
           <use :href="icon + '#ruler'"></use>

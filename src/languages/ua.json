@@ -38,6 +38,12 @@
   "achievements": "Досягнення",
 
   "tech_header_skills": "Технічні скіли",
+  "bundlers_skills": "Збірки проекту",
+  "databases_skills": "Бази даних",
+  "additions_skills": "Додатково",
+  "vcs_skills": "Системи контролю версій",
+  "work_skills": "Працюю із",
+  "web_skills": "Веб технології",
   "languages_header_skills": "Мови",
   "eng_language": "Англійська - середня",
   "ua_language": "Українська - носій",
