@@ -58,7 +58,7 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699985668/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-14_%D0%B2_20.10.35_bd9hgo.png",
     "repo_link": "https://github.com/Lucky13identify/GoIT_tweets",
     "page_link": "https://lucky13identify.github.io/GoIT_tweets/",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "3",
@@ -84,7 +84,7 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699460746/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-08_%D0%B2_18.24.58_ojhfbl.png",
     "repo_link": "https://github.com/Lucky13identify/html-command-project",
     "page_link": "https://andriitomilov.github.io/dream-team-14/",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "4",
@@ -113,7 +113,7 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699460742/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-08_%D0%B2_18.23.50_ydcp2l.png",
     "repo_link": "https://github.com/Lucky13identify/JS-command-project",
     "page_link": "https://hannavakulenko.github.io/filmoteka-team10/index.html",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "5",
@@ -138,7 +138,7 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699985667/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-14_%D0%B2_20.11.36_h11yur.png  ",
     "repo_link": "https://github.com/Lucky13identify/goit-react-hw-05-movies",
     "page_link": "https://lucky13identify.github.io/goit-react-hw-05-movies/",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "6",
@@ -184,7 +184,7 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699476153/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-08_%D0%B2_22.40.22_aybig9.png",
     "repo_link": "https://github.com/Lucky13identify/goit-js-hw-11",
     "page_link": "https://lucky13identify.github.io/goit-js-hw-11/",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "8",
@@ -209,7 +209,7 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699460740/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-08_%D0%B2_18.19.18_d5m5ko.png",
     "repo_link": "https://github.com/Lucky13identify/calculator",
     "page_link": "https://lucky13identify.github.io/calculator/",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "9",
@@ -265,7 +265,7 @@
     ],
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699460228/MyCV/setInterval_c0i1md.png",
     "repo_link": "https://github.com/Lucky13identify/finance-test-task",
-    "page_link": "no page",
-    "backend_link": "no backend"
+    "page_link": null,
+    "backend_link": null
   }
 ]

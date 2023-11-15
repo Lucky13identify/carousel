@@ -43,15 +43,24 @@
         </li>
       </ul>
       <div class="link-container">
-        <a class="link-button" :href="$store.state.oneProject.repo_link">{{
-          $t("button_front_modal")
-        }}</a>
-        <a class="link-button" :href="$store.state.oneProject.backend_link">{{
-          $t("button_back_modal")
-        }}</a>
-        <a class="link-button" :href="$store.state.oneProject.page_link">{{
-          $t("button_live_modal")
-        }}</a>
+        <a
+          v-if="$store.state.oneProject.repo_link"
+          class="link-button"
+          :href="$store.state.oneProject.repo_link"
+          >{{ $t("button_front_modal") }}</a
+        >
+        <a
+          v-if="$store.state.oneProject.backend_link"
+          class="link-button"
+          :href="$store.state.oneProject.backend_link"
+          >{{ $t("button_back_modal") }}</a
+        >
+        <a
+          v-if="$store.state.oneProject.page_link"
+          class="link-button"
+          :href="$store.state.oneProject.page_link"
+          >{{ $t("button_live_modal") }}</a
+        >
       </div>
     </div>
   </div>
@@ -136,16 +145,17 @@ export default {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
+  position: relative; /* Используем относительное позиционирование */
+  top: 50%; /* Позиционируем по центру вертикально */
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  min-height: 600px;
+  max-height: 90vh;
   border-radius: 15px;
   background: var(--background-color);
   padding: 20px;
   color: var(--color);
+  overflow-y: auto;
 }
 
 .icon {
@@ -159,6 +169,7 @@ export default {
 
 .image {
   border-radius: 20px;
+  /* width: 600px; */
 }
 
 .close {
