@@ -25,7 +25,7 @@ localStorage.setItem("currentLanguage", i18n.global.locale);
 
 const router = createRouter({
   history: createWebHashHistory(),
-  base: "/",
+  base: "/MyCV/",
   routes: [
     { name: "Home", path: "/", component: MainPage },
     { name: "About", path: "/about", component: AboutMePage },
