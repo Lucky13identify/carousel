@@ -1,10 +1,17 @@
 [
   {
     "id": "1",
-    "name": "Goose Track",
-    "type": "command",
-    "notes": "Backend and a frontend developer.",
-    "description": "This is the task tracker with personal to-do list. The project provides for the possibility of user registration, authentication and authorization. In addition, users can create and track their tasks, assign them by completion status, view their completion statistics over a period of time, and edit and delete their tasks.",
+    "name": { "en": "Goose Track", "ua": "Гус Трек" },
+    "type": { "en": "command project", "ua": "командний проект" },
+    "notes": {
+      "en": "Acted as a backend and frontend developer",
+      "ua": "Виконував функції backend та frontend розробника"
+    },
+
+    "description": {
+      "en": "This is the task tracker with personal to-do list. The project provides for the possibility of user registration, authentication and authorization. In addition, users can create and track their tasks, assign them by completion status, view their completion statistics over a period of time, and edit and delete their tasks.",
+      "ua": "Це трекер завдань із особистим списком справ. Проектом передбачена можливість реєстрації користувачів, аутентифікації та авторизації. Крім того, користувачі можуть створювати та відстежувати свої завдання, призначати їх за статусом виконання, переглядати статистику виконання за певний період часу, редагувати та видаляти свої завдання."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -29,10 +36,13 @@
   },
   {
     "id": "2",
-    "name": "Car catalog",
-    "type": "single",
+    "name": { "en": "Car catalog", "ua": "Авто-каталог" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
     "notes": null,
-    "description": "On this website, you can choose a car for rent. You can explore each car and see in which region it is available for rental. You can also add your preferred car to your favorites.",
+    "description": {
+      "en": "On this website, you can choose a car for rent. You can explore each car and see in which region it is available for rental. You can also add your preferred car to your favorites.",
+      "ua": "На цьому сайті ви можете вибрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Ви також можете додати улюблений автомобіль до вибраного."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -52,10 +62,16 @@
   },
   {
     "id": "3",
-    "name": "Міміно",
-    "type": "command",
-    "notes": "Frontend developer",
-    "description": "The website of a restaurant and hotel complex where you can review the menu, check the location on the map, reserve a table, as well as book a hotel room and explore the available accommodations.",
+    "name": { "en": "Mimino", "ua": "Міміно" },
+    "type": { "en": "command project", "ua": "командний проект" },
+    "notes": {
+      "en": "Performed the role of frontend developer",
+      "ua": "Виконував роль фронтенд-розробника"
+    },
+    "description": {
+      "en": "The website of a restaurant and hotel complex where you can review the menu, check the location on the map, reserve a table, as well as book a hotel room and explore the available accommodations.",
+      "ua": "Сайт ресторанно-готельного комплексу, де можна переглянути меню, перевірити розташування на карті, зарезервувати столик, а також забронювати номер у готелі та ознайомитися з наявними місцями розміщення."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -72,10 +88,16 @@
   },
   {
     "id": "4",
-    "name": "Filmoteka",
-    "type": "command",
-    "notes": "Frontend developer and made a firebase logic",
-    "description": "Arrange a movie theater at home with the best Filmoteka service! Watch online movies of good quality in a pleasant home environment and at a convenient time for you. On this website, you can register and add movies to your wishlist. You can also view information about the film and its trailer.",
+    "name": { "en": "Filmoteka", "ua": "Фільмотека" },
+    "type": { "en": "command project", "ua": "командний проект" },
+    "notes": {
+      "en": "I was in the role of Frontend Developer and created firebase logic",
+      "ua": "Я був у ролі Frontend Developer і створював логіку firebase"
+    },
+    "description": {
+      "en": "Arrange a movie theater at home with the best Filmoteka service! Watch online movies of good quality in a pleasant home environment and at a convenient time for you. On this website, you can register and add movies to your wishlist. You can also view information about the film and its trailer.",
+      "ua": "Влаштуйте кінотеатр вдома з найкращим сервісом Filmoteka! Дивіться онлайн фільми хорошої якості в приємній домашній обстановці і в зручний для вас час. На цьому веб-сайті ви можете зареєструватися та додати фільми до свого списку бажань. Ви також можете переглянути інформацію про фільм та його трейлер."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -95,10 +117,13 @@
   },
   {
     "id": "5",
-    "name": "Film finder",
-    "type": "single",
+    "name": { "en": "Film-finder", "ua": "Фільм-фаіндер" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
     "notes": null,
-    "description": "On this website, you can find the movies that interest you and learn more about them.",
+    "description": {
+      "en": "On this website, you can find the movies that interest you and learn more about them.",
+      "ua": "На цьому веб-сайті ви можете знайти фільми, які вас цікавлять, і дізнатися про них більше."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -117,10 +142,13 @@
   },
   {
     "id": "6",
-    "name": "Web Studio",
-    "type": "single",
-    "notes": "Frontend developer",
-    "description": "The website is designed using HTML5 and CSS3 with the utilization of the SASS preprocessor.",
+    "name": { "en": "Web Studio", "ua": "Веб-студія" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
+    "notes": null,
+    "description": {
+      "en": "The website is designed using HTML5 and CSS3 with the utilization of the SASS preprocessor.",
+      "ua": "Веб-сайт розроблено з використанням HTML5 і CSS3 із застосуванням препроцесора SASS."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -137,10 +165,13 @@
   },
   {
     "id": "7",
-    "name": "Image finder",
-    "type": "single",
+    "name": { "en": "Image-finder", "ua": "Пошук зображень" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
     "notes": "Frontend developer",
-    "description": "On this website, you can find images that interest you.",
+    "description": {
+      "en": "On this website, you can find images that interest you.",
+      "ua": "На цьому веб-сайті ви можете знайти зображення, які вас цікавлять."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -157,10 +188,13 @@
   },
   {
     "id": "8",
-    "name": "Calculator",
-    "type": "single",
-    "notes": "Frontend developer",
-    "description": "If you need mathematical calculations, this website will come in handy for you.",
+    "name": { "en": "Calculator", "ua": "Калькулятор" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
+    "notes": null,
+    "description": {
+      "en": "If you need mathematical calculations, this website will come in handy for you.",
+      "ua": "Якщо вам потрібні математичні розрахунки, цей веб-сайт стане вам у нагоді."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -179,10 +213,13 @@
   },
   {
     "id": "9",
-    "name": "Deals",
-    "type": "single",
-    "notes": "Frontend developer",
-    "description": "Here, you can explore all the available deals in the market and also register.",
+    "name": { "en": "Deals", "ua": "Угоди" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
+    "notes": null,
+    "description": {
+      "en": "Here, you can explore all the available deals in the market and also register.",
+      "ua": "Тут ви можете ознайомитися з усіма доступними пропозиціями на ринку, а також зареєструватися."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",
@@ -204,10 +241,13 @@
   },
   {
     "id": "10",
-    "name": "Tickers",
-    "type": "single",
-    "notes": "Frontend developer",
-    "description": "Track stocks in real-time! You can set the stock price change interval and also remove the ones you don't need.",
+    "name": { "en": "Tickers", "ua": "Тікери" },
+    "type": { "en": "pet-project", "ua": "пет-проект" },
+    "notes": null,
+    "description": {
+      "en": "Track stocks in real-time! You can set the stock price change interval and also remove the ones you don't need.",
+      "ua": "Відстежуйте акції в режимі реального часу! Ви можете встановити інтервал зміни курсу акцій, а також видалити ті, які вам не потрібні."
+    },
     "tech_stack": [
       "HTML5",
       "CSS3",

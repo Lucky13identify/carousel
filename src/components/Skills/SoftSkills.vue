@@ -1,10 +1,18 @@
 <template>
   <div>
     <ul class="flex-container">
-      <li><p>Strong-willed</p></li>
-      <li><p>Goal-oriented</p></li>
-      <li><p>Team-work</p></li>
-      <li><p>Meet the deadline</p></li>
+      <li>
+        <p>{{ $t("strong_soft") }}</p>
+      </li>
+      <li>
+        <p>{{ $t("goal_soft") }}</p>
+      </li>
+      <li>
+        <p>{{ $t("team_soft") }}</p>
+      </li>
+      <li>
+        <p>{{ $t("deadline_soft") }}</p>
+      </li>
     </ul>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="container-style" :style="themeStyles">
     <section class="skills">
       <div class="container">
-        <h2 class="skills-header">Tech skills</h2>
+        <h2 class="skills-header">{{ $t("tech_header_skills") }}</h2>
         <div class="flex-container">
           <BuildersSkills />
           <DatabasesSkills />
@@ -14,11 +14,11 @@
         </div>
         <div class="soft-container">
           <div>
-            <h2 class="skills-header">Soft skills</h2>
+            <h2 class="skills-header">{{ $t("soft_header_skills") }}</h2>
             <SoftSkills />
           </div>
           <div>
-            <h2 class="skills-header">Languages</h2>
+            <h2 class="skills-header">{{ $t("languages_header_skills") }}</h2>
             <LanguagesSkills />
           </div>
         </div>

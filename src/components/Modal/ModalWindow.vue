@@ -1,5 +1,10 @@
 <template>
-  <div class="overlay" @click="closeModalOverlay" :style="themeStyles">
+  <div
+    class="overlay"
+    @click="closeModalOverlay"
+    :style="themeStyles"
+    v-if="$store.state.oneProject"
+  >
     <div class="modal">
       <div class="button-container">
         <button class="close" type="button" @click="closeModalButton">
@@ -12,18 +17,22 @@
         <img class="image" :src="$store.state.oneProject.img" />
       </div>
       <div class="name-container">
-        <h2>{{ $store.state.oneProject.name }}</h2>
-        <p class="tech-skill">{{ $store.state.oneProject.type }} project</p>
+        <h2 v-if="$store.state.oneProject.name">
+          {{ getProjectName($store.state.oneProject) }}
+        </h2>
+        <p v-if="$store.state.oneProject.type" class="tech-skill">
+          {{ getProjectType($store.state.oneProject) }}
+        </p>
       </div>
-      <p class="project-notes">
-        <span class="fat-header">Notes: </span
-        >{{ $store.state.oneProject.notes }}
+      <p v-if="$store.state.oneProject.notes" class="project-notes">
+        <span class="fat-header">{{ $t("notes_modal") }} </span
+        >{{ getProjectNote($store.state.oneProject) }}
       </p>
-      <h3>Description:</h3>
-      <p class="project-description">
-        {{ $store.state.oneProject.description }}
+      <h3>{{ $t("description_modal") }}</h3>
+      <p v-if="$store.state.oneProject.description" class="project-description">
+        {{ getProjectDescription($store.state.oneProject) }}
       </p>
-      <h3>Tech stack of the project:</h3>
+      <h3>{{ $t("stack_modal") }}</h3>
       <ul class="tech-container">
         <li
           class="tech-skill"
@@ -34,15 +43,15 @@
         </li>
       </ul>
       <div class="link-container">
-        <a class="link-button" :href="$store.state.oneProject.repo_link"
-          >Frontend repository</a
-        >
-        <a class="link-button" :href="$store.state.oneProject.backend_link"
-          >Backend repository</a
-        >
-        <a class="link-button" :href="$store.state.oneProject.page_link"
-          >Live page</a
-        >
+        <a class="link-button" :href="$store.state.oneProject.repo_link">{{
+          $t("button_front_modal")
+        }}</a>
+        <a class="link-button" :href="$store.state.oneProject.backend_link">{{
+          $t("button_back_modal")
+        }}</a>
+        <a class="link-button" :href="$store.state.oneProject.page_link">{{
+          $t("button_live_modal")
+        }}</a>
       </div>
     </div>
   </div>
@@ -58,6 +67,22 @@ export default {
     };
   },
   methods: {
+    getProjectName(project) {
+      const currentLocale = this.$i18n.locale;
+      return project.name[currentLocale];
+    },
+    getProjectType(project) {
+      const currentLocale = this.$i18n.locale;
+      return project.type[currentLocale];
+    },
+    getProjectNote(project) {
+      const currentLocale = this.$i18n.locale;
+      return project.notes[currentLocale];
+    },
+    getProjectDescription(project) {
+      const currentLocale = this.$i18n.locale;
+      return project.description[currentLocale];
+    },
     closeModalOverlay(e) {
       if (e.target.className === "overlay") {
         this.$store.commit("openModal", false);

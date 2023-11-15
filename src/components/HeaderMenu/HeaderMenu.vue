@@ -5,19 +5,19 @@
     }}</RouterLink>
   </li>
   <li class="list-item">
-    <RouterLink :style="themeStyles" class="link" to="/about"
-      >About me</RouterLink
-    >
+    <RouterLink :style="themeStyles" class="link" to="/about">{{
+      $t("about_navigation")
+    }}</RouterLink>
   </li>
   <li class="list-item">
-    <RouterLink :style="themeStyles" class="link" to="/skills"
-      >Skills</RouterLink
-    >
+    <RouterLink :style="themeStyles" class="link" to="/skills">{{
+      $t("skills_navigation")
+    }}</RouterLink>
   </li>
   <li class="list-item">
-    <RouterLink :style="themeStyles" class="link" to="/projects"
-      >Projects</RouterLink
-    >
+    <RouterLink :style="themeStyles" class="link" to="/projects">{{
+      $t("projects_navigation")
+    }}</RouterLink>
   </li>
 </template>
 

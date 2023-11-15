@@ -54,6 +54,7 @@ export default {
   display: flex;
   gap: 20px;
   margin-right: auto;
+  width: 500px;
 }
 
 .container {

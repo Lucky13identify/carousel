@@ -1,7 +1,7 @@
 <template>
   <ul class="flex-container">
     <li>
-      <a href="" class="contact">
+      <a href="https://www.linkedin.com/in/smirnov-dmytro/" class="contact">
         <svg
           class="animate__animated"
           height="32 "
@@ -12,7 +12,7 @@
       ></a>
     </li>
     <li>
-      <a href="" class="contact">
+      <a href="https://github.com/Lucky13identify" class="contact">
         <svg
           class="animate__animated"
           height="32 "
@@ -23,7 +23,7 @@
       ></a>
     </li>
     <li>
-      <a href="" class="contact">
+      <a href="https://t.me/D_Smirnov0113" class="contact">
         <svg
           class="animate__animated"
           height="32 "
@@ -34,7 +34,7 @@
       ></a>
     </li>
     <li>
-      <a href="" class="contact">
+      <a href="mailto:d.smirnov0113@gmail.com" class="contact">
         <svg
           class="animate__animated"
           height="32 "

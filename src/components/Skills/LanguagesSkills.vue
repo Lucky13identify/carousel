@@ -1,8 +1,12 @@
 <template>
   <div>
     <ul class="flex-container">
-      <li><p>English - Intermediate</p></li>
-      <li><p>Ukrainian - native</p></li>
+      <li>
+        <p>{{ $t("eng_language") }}</p>
+      </li>
+      <li>
+        <p>{{ $t("ua_language") }}</p>
+      </li>
     </ul>
   </div>
 </template>

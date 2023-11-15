@@ -9,19 +9,19 @@
       />
       <div class="hero-info">
         <p class="hero-name animate__animated animate__backInRight">
-          Dmytro Smirnov
+          {{ $t("name_main") }}
         </p>
         <p class="hero-work animate__animated animate__backInRight">
-          Fullstack developer
+          {{ $t("post_main") }}
         </p>
         <p class="hero-description animate__animated animate__backInRight">
-          Welcome to my resume website! Here, you can learn more about me and
-          get a detailed overview of my skills.
+          {{ $t("title_main") }}
         </p>
         <router-link
           class="hero-link animate__animated animate__backInRight"
           to="/about"
-          >Learn more
+        >
+          {{ $t("button_main") }}
         </router-link>
       </div>
     </div>

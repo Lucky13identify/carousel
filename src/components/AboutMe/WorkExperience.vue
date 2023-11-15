@@ -1,38 +1,36 @@
 <template>
-  <h2 class="header">Work experience</h2>
+  <h2 class="header">{{ $t("work_header_about") }}</h2>
   <ul class="flex-container">
     <li>
-      <h3 class="subtitle">AC Crowe Ukraine (2021 - 2022)</h3>
+      <h3 class="subtitle">{{ $t("crowe_about") }} (2021 - 2022)</h3>
       <div class="description">
         <div class="container-description">
-          <p class="header-description">Position:</p>
-          <p class="text-description">accountant-auditor A2</p>
+          <p class="header-description">{{ $t("position") }}</p>
+          <p class="text-description">{{ $t("crowe_position_about") }}</p>
         </div>
         <div class="container-description">
-          <p class="header-description">Description:</p>
+          <p class="header-description">{{ $t("description") }}</p>
           <p class="text-description">
-            project work on the preparation of financial statements,
-            communication with the client.
+            {{ $t("crowe_description_about") }}
           </p>
         </div>
         <div class="container-description">
-          <p class="header-description">Achievements:</p>
-          <p class="text-description">have trained interns on the project</p>
+          <p class="header-description">{{ $t("achievements") }}</p>
+          <p class="text-description">{{ $t("crowe_achievements_about") }}</p>
         </div>
       </div>
     </li>
     <li>
-      <h3 class="subtitle">Baker Tilly (2019 - 2021)</h3>
+      <h3 class="subtitle">{{ $t("baker_about") }} (2019 - 2021)</h3>
       <div class="description">
         <div class="container-description">
-          <p class="header-description">Position:</p>
-          <p class="text-description">trainee, accountant-auditor A1</p>
+          <p class="header-description">{{ $t("position") }}</p>
+          <p class="text-description">{{ $t("baker_position_about") }}</p>
         </div>
         <div class="container-description">
-          <p class="header-description">Description:</p>
+          <p class="header-description">{{ $t("description") }}</p>
           <p class="text-description">
-            Assistance in preparing financial statements in accordance with
-            IFRS. Communication with the client. Teamwork on projects.
+            {{ $t("baker_description_about") }}
           </p>
         </div>
       </div>

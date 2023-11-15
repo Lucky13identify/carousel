@@ -1,6 +1,6 @@
 <template>
   <li class="project" :style="themeStyles">
-    <a class="project-link" href="">
+    <a class="project-link" :href="project.page_link">
       <div class="img-container">
         <img
           width="350"
@@ -11,10 +11,10 @@
         /></div
     ></a>
     <div class="info-container">
-      <h2 class="project-name">{{ project.name }}</h2>
+      <h2 class="project-name">{{ getProjectName(project, $i18n) }}</h2>
       <div class="flex-container">
         <button class="project-button" type="button" @click="openModal">
-          Learn more
+          {{ $t("button_main") }}
         </button>
       </div>
     </div>
@@ -23,11 +23,13 @@
 
 <script>
 import ModalWindow from "../Modal/ModalWindow.vue";
+import { getProjectName } from "../../utils/translater";
 
 export default {
   data() {
     return {
       ModalWindow,
+      getProjectName,
     };
   },
 

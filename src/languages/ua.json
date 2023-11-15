@@ -44,6 +44,14 @@
   "soft_header_skills": "Софт скіли",
   "strong_soft": "Вольовничість",
   "goal_soft": "Цілеспрямований",
-  "team_soft": "Вміння працювати в команді",
-  "deadline_soft": "Дотримання дедлайнів"
+  "team_soft": "Командний гравець",
+  "deadline_soft": "Дотримання дедлайнів",
+
+  "notes_modal": "Примітки:",
+  "description_modal": "Опис:",
+  "stack_modal": "Технічний стек проекту:",
+
+  "button_front_modal": "Frontend сховище",
+  "button_back_modal": "Backend сховище",
+  "button_live_modal": "Жива сторінка"
 }
