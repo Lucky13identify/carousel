@@ -11,7 +11,17 @@
           <use :href="icon + '#linkedin'"></use></svg
       ></a>
     </li>
-
+    <li>
+      <a href="https://github.com/Lucky13identify" class="contact">
+        <svg
+          class="animate__animated"
+          height="32 "
+          width="32"
+          :style="themeStyles"
+        >
+          <use :href="icon + '#github'"></use></svg
+      ></a>
+    </li>
     <li>
       <a href="https://t.me/D_Smirnov0113" class="contact">
         <svg
