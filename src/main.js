@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter } from "vue-router";
 import SkillsPage from "./pages/Skills/SkillsPage.vue";
 import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
 import MainPage from "./pages/MainPage/MainPage.vue";
@@ -24,7 +24,6 @@ localStorage.setItem("isThemeDark", JSON.stringify(store.state.isThemeDark));
 localStorage.setItem("currentLanguage", i18n.global.locale);
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
   routes: [
     { name: "Home", path: "/", component: MainPage },
     { name: "About", path: "/about", component: AboutMePage },
