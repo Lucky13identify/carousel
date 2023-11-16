@@ -1,5 +1,3 @@
-/* Reset styles */
-
 body {
   font-family: "Merriweather", serif;
   font-weight: 500;
@@ -51,8 +49,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-/* Global styles for classes */
 
 .container {
   width: 1200px;

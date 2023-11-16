@@ -24,7 +24,7 @@ localStorage.setItem("isThemeDark", JSON.stringify(store.state.isThemeDark));
 localStorage.setItem("currentLanguage", i18n.global.locale);
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/MyCV/"),
   routes: [
     { name: "Home", path: "/", component: MainPage },
     { name: "About", path: "/about", component: AboutMePage },

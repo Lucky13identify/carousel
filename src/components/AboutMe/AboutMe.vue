@@ -1,7 +1,7 @@
 <template>
   <h1 class="header">{{ $t("header_about") }}</h1>
   <div class="flex-container">
-    <p>{{ $t("text_about") }}dddd</p>
+    <p>{{ $t("text_about") }}</p>
   </div>
 </template>
 
