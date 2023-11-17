@@ -12,13 +12,17 @@ import { createI18n } from "vue-i18n";
 // import ua from "./languages/ua.json";
 // console.log(store.state.isThemeDark);
 
+const initialLocale = localStorage.getItem("currentLanguage") || "ua";
+
 const i18n = createI18n({
-  locale: localStorage.getItem("currentLanguage"),
+  locale: initialLocale,
   messages: {
     en: require("./languages/en.json"),
     ua: require("./languages/ua.json"),
   },
 });
+
+console.log(i18n.global.locale);
 
 localStorage.setItem("isThemeDark", JSON.stringify(store.state.isThemeDark));
 localStorage.setItem("currentLanguage", i18n.global.locale);
