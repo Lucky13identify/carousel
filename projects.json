@@ -40,8 +40,8 @@
     "type": { "en": "pet-project", "ua": "пет-проект" },
     "notes": null,
     "description": {
-      "en": "On this website, you can choose a car for rent. You can explore each car and see in which region it is available for rental. You can also add your preferred car to your favorites.",
-      "ua": "На цьому сайті ви можете вибрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Ви також можете додати улюблений автомобіль до вибраного."
+      "en": "On this website, you can choose a car for rent. You can explore each car and see in which region it is available for rental. You can also filter cars based on your search criteria and add your preferred car to your favorites.",
+      "ua": "На цьому сайті ви можете вибрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Ви також можете фільтрувати автомобілі за критеріями пошуку та додавати обрані автомобілі до ваших списку улюблених."
     },
     "tech_stack": [
       "HTML5",
@@ -69,8 +69,8 @@
       "ua": "Виконував роль фронтенд-розробника"
     },
     "description": {
-      "en": "The website of a restaurant and hotel complex where you can review the menu, check the location on the map, reserve a table, as well as book a hotel room and explore the available accommodations.",
-      "ua": "Сайт ресторанно-готельного комплексу, де можна переглянути меню, перевірити розташування на карті, зарезервувати столик, а також забронювати номер у готелі та ознайомитися з наявними місцями розміщення."
+      "en": "The website of a restaurant and hotel complex where you can review the menu, check the institution location on the map, reserve a table, as well as book a hotel room and explore the available accommodations.",
+      "ua": "Сайт ресторанно-готельного комплексу, де можна переглянути меню, перевірити розташування закладу на карті, зарезервувати столик, а також забронювати номер у готелі та ознайомитися з наявними місцями розміщення."
     },
     "tech_stack": [
       "HTML5",
@@ -235,8 +235,8 @@
       "GitHub"
     ],
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699460229/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-08_%D0%B2_18.14.46_aj53zk.png",
-    "repo_link": "https://lucky13identify.github.io/Zenbit_Test_Task_/",
-    "page_link": "https://github.com/Lucky13identify/Zenbit_Test_Task_",
+    "repo_link": "https://github.com/Lucky13identify/Zenbit_Test_Task_",
+    "page_link": "https://lucky13identify.github.io/Zenbit_Test_Task_/",
     "backend_link": "https://github.com/Lucky13identify/Zenbit_Test_Task_backend"
   },
   {
