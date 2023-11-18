@@ -10,11 +10,11 @@
   "button_main": "Learn more",
 
   "header_about": "Let's get acquainted!",
-  "text_about": "My name is Dmitry, I am a fullstack developer with experience in various technologies. I have successfully completed projects involving various libraries, technologies and frameworks, including this website you are currently viewing. What sets me apart is my persistence and unyielding determination to succeed. I always get the job done ahead of time and ensure that projects are completed on time or even ahead of schedule because I know deadlines very well. My ability to work in a team and manage time effectively ensures that tasks are completed with maximum efficiency. I don't stop until the job is done. Let's build the future together and achieve great results!",
+  "text_about": "My name is Dmytro, and I am a full-stack developer with experience in various technologies. I have successfully completed projects involving different libraries, technologies, and frameworks, including the website you are currently browsing. What sets me apart is my persistence and unwavering goal to achieve success. I always deliver work on time and ensure that projects are completed either on schedule or even ahead of deadlines, as I understand the importance of timelines. My ability to work in a team and effectively manage time guarantees that tasks are accomplished with maximum efficiency. I don't stop until the job is done. Let's build the future together and achieve great results!",
 
   "education_header_about": "Education",
   "goit_about": "IT School 'GoIT'",
-  "goit_description_about": "Fullstack developer - my сertificate",
+  "goit_description_about": "Fullstack developer - my сertificate.",
   "franko_about": "Ivan Franko national university of Lviv",
   "franko_description_about": "Master of accounting and taxation.",
   "krok_about": "Project Managment in «KROK» university ",
@@ -22,15 +22,15 @@
   "ntu_about": "Kiev National transport university",
   "ntu_description_about": "Bachelor of logistics specialty.",
   "ktek_about": "'Kiev transport and economic college' of national transport university",
-  "ktek_description_about": "Junior Specialist, organization of transportation services on automobile transport, Red Diploma.",
+  "ktek_description_about": "Junior Specialist, organization of transportation services on automobile transport, honors degree.",
 
   "work_header_about": "Work experience",
   "crowe_about": "AC CROWE Ukraine",
-  "crowe_position_about": "accountant-auditor A2",
-  "crowe_description_about": "project work on the preparation of financial statements, communication with the client.",
+  "crowe_position_about": "Accountant-auditor A2.",
+  "crowe_description_about": "Project work on the preparation of financial statements, communication with the client.",
   "crowe_achievements_about": "Prepared and trained interns to work on projects.",
   "baker_about": "Baker Tilly Ukraine",
-  "baker_position_about": "trainee, accountant-auditor A1",
+  "baker_position_about": "Trainee, accountant-auditor A1.",
   "baker_description_about": "Assistance in preparing financial statements in accordance with IFRS. Communication with the client. Teamwork on projects.",
 
   "position": "Position",

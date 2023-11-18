@@ -41,7 +41,7 @@
     "notes": null,
     "description": {
       "en": "On this website, you can choose a car for rent. You can explore each car and see in which region it is available for rental. You can also filter cars based on your search criteria and add your preferred car to your favorites.",
-      "ua": "На цьому сайті ви можете вибрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Ви також можете фільтрувати автомобілі за критеріями пошуку та додавати обрані автомобілі до ваших списку улюблених."
+      "ua": "На цьому сайті ви можете обрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Ви також можете фільтрувати автомобілі за критеріями пошуку та додавати обрані автомобілі до ваших списку улюблених."
     },
     "tech_stack": [
       "HTML5",
@@ -65,12 +65,12 @@
     "name": { "en": "Mimino", "ua": "Міміно" },
     "type": { "en": "command project", "ua": "командний проект" },
     "notes": {
-      "en": "Performed the role of frontend developer",
+      "en": "I performed  the role of frontend developer",
       "ua": "Виконував роль фронтенд-розробника"
     },
     "description": {
       "en": "The website of a restaurant and hotel complex where you can review the menu, check the institution location on the map, reserve a table, as well as book a hotel room and explore the available accommodations.",
-      "ua": "Сайт ресторанно-готельного комплексу, де можна переглянути меню, перевірити розташування закладу на карті, зарезервувати столик, а також забронювати номер у готелі та ознайомитися з наявними місцями розміщення."
+      "ua": "Сайт ресторанно-готельного комплексу, де можна переглянути меню, перевірити розташування закладу на мапі, зарезервувати столик, а також забронювати номер у готелі та ознайомитися з наявними місцями розміщення."
     },
     "tech_stack": [
       "HTML5",
@@ -91,8 +91,8 @@
     "name": { "en": "Filmoteka", "ua": "Фільмотека" },
     "type": { "en": "command project", "ua": "командний проект" },
     "notes": {
-      "en": "I was in the role of Frontend Developer and created firebase logic",
-      "ua": "Я був у ролі Frontend Developer і створював логіку firebase"
+      "en": "I performed the role of frontend developer, created firebase logic",
+      "ua": "Я виконував роль  Frontend Developer, створював логіку firebase"
     },
     "description": {
       "en": "Arrange a movie theater at home with the best Filmoteka service! Watch online movies of good quality in a pleasant home environment and at a convenient time for you. On this website, you can register and add movies to your wishlist. You can also view information about the film and its trailer.",
@@ -217,8 +217,8 @@
     "type": { "en": "pet-project", "ua": "пет-проект" },
     "notes": null,
     "description": {
-      "en": "Here, you can explore all the available deals in the market and also register.",
-      "ua": "Тут ви можете ознайомитися з усіма доступними пропозиціями на ринку, а також зареєструватися."
+      "en": "Here, you can explore all the available deals in the real estate market and also register.",
+      "ua": "Тут ви можете ознайомитися з усіма доступними пропозиціями на ринку нерухомості, а також зареєструватися."
     },
     "tech_stack": [
       "HTML5",
