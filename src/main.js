@@ -1,12 +1,18 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
-import SkillsPage from "./pages/Skills/SkillsPage.vue";
-import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
-import MainPage from "./pages/MainPage/MainPage.vue";
-import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
+
+// import SkillsPage from "./pages/Skills/SkillsPage.vue";
+// import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
+// import MainPage from "./pages/MainPage/MainPage.vue";
+// import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
 import store from "./vuex/store";
 import { createI18n } from "vue-i18n";
+
+const SkillsPage = () => import("./pages/Skills/SkillsPage.vue");
+const ProjectsPage = () => import("./pages/Projects/ProjectsPage.vue");
+const MainPage = () => import("./pages/MainPage/MainPage.vue");
+const AboutMePage = () => import("./pages/AboutMe/AboutMePage.vue");
 
 // import en from "./languages/en.json";
 // import ua from "./languages/ua.json";

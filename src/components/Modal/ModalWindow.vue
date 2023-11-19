@@ -3,7 +3,7 @@
     class="overlay"
     @click="closeModalOverlay"
     :style="themeStyles"
-    v-if="$store.state.oneProject"
+    v-if="$store.state.oneProject.name"
   >
     <div class="modal">
       <div class="button-container">
@@ -95,10 +95,12 @@ export default {
     closeModalOverlay(e) {
       if (e.target.className === "overlay") {
         this.$store.commit("openModal", false);
+        this.$store.commit("deleteOneProject");
       }
     },
     closeModalButton() {
       this.$store.commit("openModal", false);
+      this.$store.commit("deleteOneProject");
     },
 
     onEscCloseModal(event) {
@@ -145,12 +147,12 @@ export default {
 }
 
 .modal {
-  position: relative; /* Используем относительное позиционирование */
-  top: 50%; /* Позиционируем по центру вертикально */
+  position: relative;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  max-height: 90vh;
+  height: 90%;
   border-radius: 15px;
   background: var(--background-color);
   padding: 20px;

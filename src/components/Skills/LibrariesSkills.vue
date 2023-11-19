@@ -44,6 +44,12 @@
         </svg>
         <p>Animate.css</p>
       </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#earth'"></use>
+        </svg>
+        <p>i18next</p>
+      </li>
     </ul>
   </div>
 </template>

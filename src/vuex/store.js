@@ -29,6 +29,9 @@ const store = createStore({
     setOneProject(state, payload) {
       state.oneProject = payload;
     },
+    deleteOneProject(state) {
+      state.oneProject = {};
+    },
   },
   actions: {
     fetchDataFromServer({ commit }) {
