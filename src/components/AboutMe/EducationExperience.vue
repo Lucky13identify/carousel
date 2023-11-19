@@ -1,25 +1,25 @@
 <template>
   <h2 class="header">{{ $t("education_header_about") }}</h2>
   <ul class="flex-container">
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">{{ $t("goit_about") }} (2022 - 2023)</h3>
       <p class="description">{{ $t("goit_description_about") }}</p>
     </li>
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">{{ $t("franko_about") }} (2021 - 2023)</h3>
       <p class="description">{{ $t("franko_description_about") }}</p>
     </li>
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">{{ $t("krok_about") }} (2018 - 2019)</h3>
       <p class="description">
         {{ $t("krok_description_about") }}
       </p>
     </li>
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">{{ $t("ntu_about") }} (2018 - 2021)</h3>
       <p class="description">{{ $t("ntu_description_about") }}</p>
     </li>
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">
         {{ $t("ktek_about") }}
         (2014 - 2018)
@@ -44,6 +44,9 @@ export default {};
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
+.description {
+  color: rgb(90, 90, 90);
+}
 
 .subtitle {
   margin-bottom: 10px;
@@ -63,5 +66,10 @@ export default {};
 
 .description {
   width: 450px;
+}
+
+.flex-element:not(:last-child) {
+  border-bottom: 2px solid #7b7b7b;
+  padding-bottom: 30px;
 }
 </style>

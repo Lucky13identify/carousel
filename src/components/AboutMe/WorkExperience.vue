@@ -1,34 +1,34 @@
 <template>
   <h2 class="header">{{ $t("work_header_about") }}</h2>
   <ul class="flex-container">
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">{{ $t("crowe_about") }} (2021 - 2022)</h3>
       <div class="description">
         <div class="container-description">
-          <p class="header-description">{{ $t("position") }}</p>
+          <p class="header-description">{{ $t("position") }}:</p>
           <p class="text-description">{{ $t("crowe_position_about") }}</p>
         </div>
         <div class="container-description">
-          <p class="header-description">{{ $t("description") }}</p>
+          <p class="header-description">{{ $t("description") }}:</p>
           <p class="text-description">
             {{ $t("crowe_description_about") }}
           </p>
         </div>
         <div class="container-description">
-          <p class="header-description">{{ $t("achievements") }}</p>
+          <p class="header-description">{{ $t("achievements") }}:</p>
           <p class="text-description">{{ $t("crowe_achievements_about") }}</p>
         </div>
       </div>
     </li>
-    <li>
+    <li class="flex-element">
       <h3 class="subtitle">{{ $t("baker_about") }} (2019 - 2021)</h3>
       <div class="description">
         <div class="container-description">
-          <p class="header-description">{{ $t("position") }}</p>
+          <p class="header-description">{{ $t("position") }}:</p>
           <p class="text-description">{{ $t("baker_position_about") }}</p>
         </div>
         <div class="container-description">
-          <p class="header-description">{{ $t("description") }}</p>
+          <p class="header-description">{{ $t("description") }}:</p>
           <p class="text-description">
             {{ $t("baker_description_about") }}
           </p>
@@ -61,6 +61,15 @@ export default {};
   text-transform: uppercase;
 }
 
+.header-description {
+  display: flex;
+  justify-content: end;
+}
+
+.text-description {
+  color: rgb(90, 90, 90);
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -75,7 +84,7 @@ export default {};
 
 .container-description {
   display: flex;
-  gap: 7px;
+  gap: 10px;
 }
 
 .header-description {
@@ -85,5 +94,10 @@ export default {};
 .text-description {
   width: 400px;
   text-align: justify;
+}
+
+.flex-element:not(:last-child) {
+  border-bottom: 2px solid #7b7b7b;
+  padding-bottom: 30px;
 }
 </style>
