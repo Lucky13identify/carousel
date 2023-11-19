@@ -1,5 +1,7 @@
 <template>
-  <div class="container-style" :style="themeStyles"><MainComponent /></div>
+  <div class="container-style" :style="themeStyles">
+    <MainComponent />
+  </div>
 </template>
 
 <script>

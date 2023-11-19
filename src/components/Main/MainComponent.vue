@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div class="container hero-container">
+    <div class="container hero-container animate__animated">
       <img
         class="photo"
         src="../../../src/assets/imges/my-photo.jpg"
@@ -8,19 +8,16 @@
         alt="Dmytro Smirnov photo"
       />
       <div class="hero-info">
-        <p class="hero-name animate__animated animate__backInRight">
+        <p class="hero-name">
           {{ $t("name_main") }}
         </p>
-        <p class="hero-work animate__animated animate__backInRight">
+        <p class="hero-work">
           {{ $t("post_main") }}
         </p>
-        <p class="hero-description animate__animated animate__backInRight">
+        <p class="hero-description">
           {{ $t("title_main") }}
         </p>
-        <router-link
-          class="hero-link animate__animated animate__backInRight"
-          to="/about"
-        >
+        <router-link class="hero-link" to="/about">
           {{ $t("button_main") }}
         </router-link>
       </div>
@@ -36,6 +33,8 @@ export default {};
 .hero-container {
   display: flex;
   gap: 20px;
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
 }
 .hero {
   padding-top: 80px;
@@ -59,7 +58,7 @@ export default {};
   line-height: 130px;
   letter-spacing: 0px;
   margin: 0px;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 .hero-info {
@@ -74,7 +73,7 @@ export default {};
   line-height: 30px;
   letter-spacing: 0px;
   margin: 0px;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
 }
 
 .hero-link {
@@ -84,7 +83,7 @@ export default {};
   padding: 10px;
   border-radius: 12px;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0; // Начальное состояние элемента
+  /* opacity: 0; // Начальное состояние элемента
   animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) 4s forwards; // 4s задержка перед анимацией
 
   @keyframes fadeIn {
@@ -98,6 +97,6 @@ export default {};
 
   &:hover {
     background-color: #236547;
-  }
+  } */
 }
 </style>

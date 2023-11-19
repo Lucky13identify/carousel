@@ -1,18 +1,20 @@
 <template>
   <div class="container-style" :style="themeStyles">
     <section class="about-me">
-      <div class="container">
-        <AboutMe />
-        <div class="video-container">
-          <video controls width="640" height="360">
-            <source
-              src="../../assets/video/Dmytro_Smirnov.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+      <div class="container animate__animated">
+        <div class="about-container">
+          <AboutMe />
+          <div class="video-container">
+            <video controls width="540" height="340">
+              <source
+                src="../../assets/video/Dmytro_Smirnov.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-        <div class="flex-container">
+        <div class="info-container">
           <div><EducationExperience /></div>
           <div><WorkExperience /></div>
         </div>
@@ -48,9 +50,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.flex-container {
+.info-container {
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
 }
 .about-me {
@@ -58,9 +59,20 @@ export default {
   padding-bottom: 40px;
 }
 
+.animate__animated {
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+}
+
 .container-style {
   background-color: rgba(80, 80, 80, 0.4);
   backdrop-filter: blur(10px);
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .video-container {

@@ -1,7 +1,7 @@
 <template>
-  <h1 class="header">{{ $t("header_about") }}</h1>
   <div class="flex-container">
-    <p>{{ $t("text_about") }}</p>
+    <h1 class="header">{{ $t("header_about") }}</h1>
+    <p class="text">{{ $t("text_about") }}</p>
   </div>
 </template>
 
@@ -11,7 +11,6 @@ export default { name: "AboutMe" };
 
 <style lang="scss" scoped>
 .header {
-  margin-bottom: 30px;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.4;
@@ -19,10 +18,14 @@ export default { name: "AboutMe" };
   text-transform: uppercase;
 }
 
+.text {
+  width: 540px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   text-align: justify;
 }
 </style>

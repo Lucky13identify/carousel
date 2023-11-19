@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-style {
-  height: 100vh;
+  height: 100%;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -45,5 +45,6 @@ export default {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  padding-bottom: 80px;
 }
 </style>
