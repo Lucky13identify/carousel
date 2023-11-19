@@ -18,6 +18,7 @@
     "vue": "^3.2.13",
     "vue-i18n": "^9.4.1",
     "vue-router": "^4.2.5",
+    "vue-spinner": "^1.0.4",
     "vue-styled-components": "^1.6.0",
     "vuex": "^4.1.0"
   },

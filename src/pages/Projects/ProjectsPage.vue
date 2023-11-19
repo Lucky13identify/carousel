@@ -1,15 +1,19 @@
 <template>
   <div class="container-style" :style="themeStyles">
-    <div class="container"><ContainerOfProjects /></div>
+    <div v-if="this.$store.state.projects.length > 0" class="container">
+      <ContainerOfProjects />
+    </div>
+    <div v-else class="flex-container"><PulseLoader /></div>
   </div>
 </template>
 
 <script>
 import ContainerOfProjects from "../../components/Projects/ContainerOfProjects";
+import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 
 export default {
   name: "ProjectsPage",
-  components: { ContainerOfProjects },
+  components: { ContainerOfProjects, PulseLoader },
   created() {
     this.fetchData();
   },
@@ -31,4 +35,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container-style {
+  height: 100vh;
+  /* backdrop-filter: blur(10px); */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+</style>
