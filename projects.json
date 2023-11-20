@@ -3,6 +3,7 @@
     "id": "1",
     "name": { "en": "Goose Track", "ua": "Гус Трек" },
     "type": { "en": "command project", "ua": "командний проект" },
+    "design_type": { "en": "responsive design", "ua": "респонсивний дизайн" },
     "notes": {
       "en": "Acted as a backend and frontend developer",
       "ua": "Виконував функції backend та frontend розробника"
@@ -38,10 +39,14 @@
     "id": "2",
     "name": { "en": "Car catalog", "ua": "Авто-каталог" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": {
+      "en": "desktop design",
+      "ua": "дизайн для комп'ютерних десктопів"
+    },
     "notes": null,
     "description": {
-      "en": "On this website, you can choose a car for rent. You can explore each car and see in which region it is available for rental. You can also filter cars based on your search criteria and add your preferred car to your favorites.",
-      "ua": "На цьому сайті ви можете обрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Ви також можете фільтрувати автомобілі за критеріями пошуку та додавати обрані автомобілі до ваших списку улюблених."
+      "en": "On this website, you can choose a car for rent. You can familiarize yourself with each car and see in which region it is available for rent. Also, there is an option to filter cars based on search criteria and add selected cars to your list of favorites.",
+      "ua": "На цьому сайті ви можете обрати автомобіль для оренди. Ви можете ознайомитися з кожним автомобілем і побачити, в якому регіоні його можна орендувати. Також, є можливість фільтрувати автомобілі за критеріями пошуку та додавати обрані автомобілі до ваших списку улюблених."
     },
     "tech_stack": [
       "HTML5",
@@ -64,6 +69,7 @@
     "id": "3",
     "name": { "en": "Mimino", "ua": "Міміно" },
     "type": { "en": "command project", "ua": "командний проект" },
+    "design_type": { "en": "responsive design", "ua": "респонсивний дизайн" },
     "notes": {
       "en": "I performed  the role of frontend developer",
       "ua": "Виконував роль фронтенд-розробника"
@@ -90,6 +96,7 @@
     "id": "4",
     "name": { "en": "Filmoteka", "ua": "Фільмотека" },
     "type": { "en": "command project", "ua": "командний проект" },
+    "design_type": { "en": "responsive design", "ua": "респонсивний дизайн" },
     "notes": {
       "en": "I performed the role of frontend developer, created firebase logic",
       "ua": "Я виконував роль  Frontend Developer, створював логіку firebase"
@@ -119,10 +126,14 @@
     "id": "5",
     "name": { "en": "Film-finder", "ua": "Фільм-фаіндер" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": {
+      "en": "desktop design",
+      "ua": "дизайн для комп'ютерних десктопів"
+    },
     "notes": null,
     "description": {
-      "en": "On this website, you can find the movies that interest you and learn more about them.",
-      "ua": "На цьому веб-сайті ви можете знайти фільми, які вас цікавлять, і дізнатися про них більше."
+      "en": "The site provides you with the opportunity to find films that interest you and learn more about them. Explore the cast as well as user reviews.",
+      "ua": "Сайт надає можливість вам знайти фільми, які вас цікавлять, і дізнатися про них більше. Ознайомтесь із акторським складом, а також із відгуками користувачів."
     },
     "tech_stack": [
       "HTML5",
@@ -144,10 +155,11 @@
     "id": "6",
     "name": { "en": "Web Studio", "ua": "Веб-студія" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": { "en": "responsive design", "ua": "респонсивний дизайн" },
     "notes": null,
     "description": {
-      "en": "The website is designed using HTML5 and CSS3 with the utilization of the SASS preprocessor.",
-      "ua": "Веб-сайт розроблено з використанням HTML5 і CSS3 із застосуванням препроцесора SASS."
+      "en": "If you are looking for a web design studio, then this website is perfect for you! You can explore the company's completed projects and order a service by filling out the form.",
+      "ua": "Якщо ви шукаєте студію веб-дизайну, то цей сайт саме для вас! Ви можете ознайомитися з вже реалізованими проектами компанії та замовити послугу, заповнивши анкету."
     },
     "tech_stack": [
       "HTML5",
@@ -161,16 +173,20 @@
     "img": "https://res.cloudinary.com/dici0468p/image/upload/v1699985668/MyCV/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2023-11-14_%D0%B2_20.13.58_weh3fe.png",
     "repo_link": "https://github.com/Lucky13identify/goit-markup-hw-08",
     "page_link": "https://lucky13identify.github.io/goit-markup-hw-08/",
-    "backend_link": "no backend"
+    "backend_link": null
   },
   {
     "id": "7",
     "name": { "en": "Image-finder", "ua": "Пошук зображень" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": {
+      "en": "desktop design",
+      "ua": "дизайн для комп'ютерних десктопів"
+    },
     "notes": "Frontend developer",
     "description": {
-      "en": "On this website, you can find images that interest you.",
-      "ua": "На цьому веб-сайті ви можете знайти зображення, які вас цікавлять."
+      "en": "On this website, you can find images that interest you. View them in full size and explore the image statistics.",
+      "ua": "На цьому веб-сайті ви можете знайти зображення, які вас цікавлять. Переглядайте їх у повному розмірі та ознайомтеся із статистикою зображення."
     },
     "tech_stack": [
       "HTML5",
@@ -190,10 +206,11 @@
     "id": "8",
     "name": { "en": "Calculator", "ua": "Калькулятор" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": { "en": "adaptive design", "ua": "адаптивний дизайн" },
     "notes": null,
     "description": {
-      "en": "If you need mathematical calculations, this website will come in handy for you.",
-      "ua": "Якщо вам потрібні математичні розрахунки, цей веб-сайт стане вам у нагоді."
+      "en": "If you need mathematical calculations, this website will come in handy for you. Perform complex calculations using this application.",
+      "ua": "Якщо вам потрібні математичні розрахунки, цей веб-сайт стане вам у нагоді. Робіть складні обчислення за допомогою цього додатка!"
     },
     "tech_stack": [
       "HTML5",
@@ -215,6 +232,10 @@
     "id": "9",
     "name": { "en": "Deals", "ua": "Угоди" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": {
+      "en": "desktop design",
+      "ua": "дизайн для комп'ютерних десктопів"
+    },
     "notes": null,
     "description": {
       "en": "Here, you can explore all the available deals in the real estate market and also register.",
@@ -243,6 +264,10 @@
     "id": "10",
     "name": { "en": "Tickers", "ua": "Тікери" },
     "type": { "en": "pet-project", "ua": "пет-проект" },
+    "design_type": {
+      "en": "desktop design",
+      "ua": "дизайн для комп'ютерних десктопів"
+    },
     "notes": null,
     "description": {
       "en": "Track stocks in real-time! You can set the stock price change interval and also remove the ones you don't need.",

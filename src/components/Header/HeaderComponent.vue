@@ -28,6 +28,7 @@ export default {
         "--backgroundColor": this.$store.state.isThemeDark
           ? "rgba(30, 30, 30, 0.6)"
           : "radial-gradient(circle, rgba(255, 225, 183, 1) 0%, rgba(194, 137, 60, 1) 67%)",
+        "--border": this.$store.state.isThemeDark ? "1px solid grey" : "rnone",
       };
     },
   },
@@ -40,7 +41,7 @@ export default {
   padding-bottom: 30px;
   background: var(--backgroundColor);
   backdrop-filter: blur(10px);
-
+  border-bottom: var(--border);
   align-items: baseline;
 }
 .list {

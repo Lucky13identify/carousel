@@ -1,6 +1,6 @@
 <template>
   <div class="container-style" :style="themeStyles">
-    <section class="skills">
+    <section class="skills animate__animated">
       <div class="container">
         <h2 class="skills-header">{{ $t("tech_header_skills") }}</h2>
         <div class="flex-container">
@@ -72,6 +72,8 @@ export default {
 .skills {
   padding-top: 40px;
   padding-bottom: 40px;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
 }
 
 .skills-header {

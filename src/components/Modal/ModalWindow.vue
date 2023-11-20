@@ -20,9 +20,14 @@
         <h2 v-if="$store.state.oneProject.name">
           {{ getProjectName($store.state.oneProject) }}
         </h2>
-        <p v-if="$store.state.oneProject.type" class="tech-skill">
-          {{ getProjectType($store.state.oneProject) }}
-        </p>
+        <div class="adding-container">
+          <p v-if="$store.state.oneProject.type" class="tech-skill">
+            {{ getProjectType($store.state.oneProject) }}
+          </p>
+          <p v-if="$store.state.oneProject.design_type" class="tech-skill">
+            {{ getProjectDesign($store.state.oneProject) }}
+          </p>
+        </div>
       </div>
       <p v-if="$store.state.oneProject.notes" class="project-notes">
         <span class="fat-header">{{ $t("notes_modal") }} </span
@@ -80,6 +85,10 @@ export default {
     };
   },
   methods: {
+    getProjectDesign(project) {
+      const currentLocale = this.$i18n.locale;
+      return project.design_type[currentLocale];
+    },
     getProjectName(project) {
       const currentLocale = this.$i18n.locale;
       return project.name[currentLocale];
@@ -162,6 +171,11 @@ export default {
   padding: 20px;
   color: var(--color);
   overflow-y: auto;
+}
+
+.adding-container {
+  display: flex;
+  gap: 20px;
 }
 
 .icon {

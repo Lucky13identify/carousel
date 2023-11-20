@@ -1,5 +1,5 @@
 <template>
-  <div class="container-style" :style="themeStyles">
+  <div class="container-style animate__animated" :style="themeStyles">
     <div v-if="this.$store.state.projects.length > 0" class="container">
       <ContainerOfProjects />
     </div>
@@ -38,6 +38,8 @@ export default {
 <style lang="scss" scoped>
 .container-style {
   height: 100%;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
   /* backdrop-filter: blur(10px); */
 }
 

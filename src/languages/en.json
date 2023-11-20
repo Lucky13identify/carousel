@@ -56,8 +56,8 @@
   "team_soft": "Team-work",
   "deadline_soft": "Meet the deadline",
 
-  "notes_modal": "Notes:",
-  "description_modal": "Description:",
+  "notes_modal": "Notes: ",
+  "description_modal": "Description: ",
   "stack_modal": "Tech stack of the project:",
 
   "button_front_modal": "Frontend repository",
