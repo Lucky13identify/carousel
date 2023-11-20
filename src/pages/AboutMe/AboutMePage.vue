@@ -61,7 +61,7 @@ export default {
 
 .animate__animated {
   animation-name: fadeIn;
-  animation-duration: 1.3s;
+  animation-duration: 1.5s;
 }
 
 .container-style {

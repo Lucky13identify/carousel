@@ -30,9 +30,9 @@ export default {
         paddingBottom: "30px",
         backgroundColor: this.$store.state.isThemeDark
           ? "rgba(30, 30, 30, 0.6)"
-          : "#2a9c68",
+          : "radial-gradient(circle, rgba(213,213,213,1) 0%, rgba(194,137,60,1) 100%)",
         backdropFilter: "blur(10px)",
-        borderBottom: "1px solid grey",
+
         alignItems: "baseline",
         color: "white",
       };
@@ -45,9 +45,13 @@ export default {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: rgba(80, 80, 80, 0.4);
+  background: radial-gradient(
+    circle,
+    rgba(255, 225, 183, 1) 0%,
+    rgba(194, 137, 60, 1) 67%
+  );
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid grey;
+
   align-items: baseline;
 }
 .list {

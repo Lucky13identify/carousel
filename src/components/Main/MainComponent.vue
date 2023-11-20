@@ -34,7 +34,7 @@ export default {};
   display: flex;
   gap: 20px;
   animation-name: fadeIn;
-  animation-duration: 1.3s;
+  animation-duration: 1.5s;
 }
 .hero {
   padding-top: 80px;
