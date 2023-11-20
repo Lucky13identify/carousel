@@ -5,7 +5,9 @@
   <!-- <MainPage /> -->
   <!-- <SkillsPage /> -->
   <teleport to="#modal">
-    <ModalWindow v-if="$store.state.isModalOpen" />
+    <transition name="fade">
+      <ModalWindow v-if="$store.state.isModalOpen"
+    /></transition>
   </teleport>
   <!-- <ProjectsPage /> -->
 </template>
@@ -31,4 +33,14 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

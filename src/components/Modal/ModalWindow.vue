@@ -1,77 +1,72 @@
 <template>
-  <transition name="fade" appear>
-    <div
-      class="overlay"
-      @click="closeModalOverlay"
-      :style="themeStyles"
-      v-if="$store.state.oneProject.name"
-    >
-      <div v-if="$store.state.isModalOpen" class="modal">
-        <div class="button-container">
-          <button class="close" type="button" @click="closeModalButton">
-            <svg class="icon" height="20 " width="20">
-              <use :href="icon + '#cross'"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="img-container">
-          <img class="image" :src="$store.state.oneProject.img" />
-        </div>
-        <div class="name-container">
-          <h2 v-if="$store.state.oneProject.name">
-            {{ getProjectName($store.state.oneProject) }}
-          </h2>
-          <p v-if="$store.state.oneProject.type" class="tech-skill">
-            {{ getProjectType($store.state.oneProject) }}
-          </p>
-        </div>
-        <p v-if="$store.state.oneProject.notes" class="project-notes">
-          <span class="fat-header">{{ $t("notes_modal") }} </span
-          >{{ getProjectNote($store.state.oneProject) }}
-        </p>
-        <h3>{{ $t("description_modal") }}</h3>
-        <p
-          v-if="$store.state.oneProject.description"
-          class="project-description"
-        >
-          {{ getProjectDescription($store.state.oneProject) }}
-        </p>
-        <h3>{{ $t("stack_modal") }}</h3>
-        <ul class="tech-container">
-          <li
-            class="tech-skill"
-            v-for="tech in this.$store.state.oneProject.tech_stack"
-            :key="tech.id"
-          >
-            {{ tech }}
-          </li>
-        </ul>
-        <div class="link-container">
-          <a
-            v-if="$store.state.oneProject.repo_link"
-            target="_blank"
-            class="link-button"
-            :href="$store.state.oneProject.repo_link"
-            >{{ $t("button_front_modal") }}</a
-          >
-          <a
-            v-if="$store.state.oneProject.backend_link"
-            target="_blank"
-            class="link-button"
-            :href="$store.state.oneProject.backend_link"
-            >{{ $t("button_back_modal") }}</a
-          >
-          <a
-            v-if="$store.state.oneProject.page_link"
-            target="_blank"
-            class="link-button"
-            :href="$store.state.oneProject.page_link"
-            >{{ $t("button_live_modal") }}</a
-          >
-        </div>
-      </div>
-    </div></transition
+  <div
+    class="overlay"
+    @click="closeModalOverlay"
+    :style="themeStyles"
+    v-if="$store.state.oneProject.name"
   >
+    <div v-if="$store.state.isModalOpen" class="modal">
+      <div class="button-container">
+        <button class="close" type="button" @click="closeModalButton">
+          <svg class="icon" height="20 " width="20">
+            <use :href="icon + '#cross'"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="img-container">
+        <img class="image" :src="$store.state.oneProject.img" />
+      </div>
+      <div class="name-container">
+        <h2 v-if="$store.state.oneProject.name">
+          {{ getProjectName($store.state.oneProject) }}
+        </h2>
+        <p v-if="$store.state.oneProject.type" class="tech-skill">
+          {{ getProjectType($store.state.oneProject) }}
+        </p>
+      </div>
+      <p v-if="$store.state.oneProject.notes" class="project-notes">
+        <span class="fat-header">{{ $t("notes_modal") }} </span
+        >{{ getProjectNote($store.state.oneProject) }}
+      </p>
+      <h3>{{ $t("description_modal") }}</h3>
+      <p v-if="$store.state.oneProject.description" class="project-description">
+        {{ getProjectDescription($store.state.oneProject) }}
+      </p>
+      <h3>{{ $t("stack_modal") }}</h3>
+      <ul class="tech-container">
+        <li
+          class="tech-skill"
+          v-for="tech in this.$store.state.oneProject.tech_stack"
+          :key="tech.id"
+        >
+          {{ tech }}
+        </li>
+      </ul>
+      <div class="link-container">
+        <a
+          v-if="$store.state.oneProject.repo_link"
+          target="_blank"
+          class="link-button"
+          :href="$store.state.oneProject.repo_link"
+          >{{ $t("button_front_modal") }}</a
+        >
+        <a
+          v-if="$store.state.oneProject.backend_link"
+          target="_blank"
+          class="link-button"
+          :href="$store.state.oneProject.backend_link"
+          >{{ $t("button_back_modal") }}</a
+        >
+        <a
+          v-if="$store.state.oneProject.page_link"
+          target="_blank"
+          class="link-button"
+          :href="$store.state.oneProject.page_link"
+          >{{ $t("button_live_modal") }}</a
+        >
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -128,8 +123,8 @@ export default {
         "--color-tech": this.$store.state.isThemeDark ? "white" : "#FFFFFF",
         "--icon": this.$store.state.isThemeDark ? "white" : "black",
         "--overlay": this.$store.state.isThemeDark
-          ? "rgba(42, 156, 104, 0.2)"
-          : "rgba(18, 20, 23, 0.5)",
+          ? "rgba(120, 120, 120, 0.5)"
+          : "rgba(18, 20, 23, 0.6)",
       };
     },
   },
@@ -143,15 +138,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 .overlay {
   position: fixed;
   overflow-y: auto;
