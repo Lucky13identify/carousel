@@ -4,7 +4,6 @@
       <ul class="list">
         <HeaderMenu />
       </ul>
-
       <HeaderSettings />
       <ContactsComponent />
     </div>
@@ -26,15 +25,9 @@ export default {
   computed: {
     themeStyles() {
       return {
-        paddingTop: "30px",
-        paddingBottom: "30px",
-        backgroundColor: this.$store.state.isThemeDark
+        "--backgroundColor": this.$store.state.isThemeDark
           ? "rgba(30, 30, 30, 0.6)"
-          : "radial-gradient(circle, rgba(213,213,213,1) 0%, rgba(194,137,60,1) 100%)",
-        backdropFilter: "blur(10px)",
-
-        alignItems: "baseline",
-        color: "white",
+          : "radial-gradient(circle, rgba(255, 225, 183, 1) 0%, rgba(194, 137, 60, 1) 67%)",
       };
     },
   },
@@ -45,11 +38,7 @@ export default {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 225, 183, 1) 0%,
-    rgba(194, 137, 60, 1) 67%
-  );
+  background: var(--backgroundColor);
   backdrop-filter: blur(10px);
 
   align-items: baseline;

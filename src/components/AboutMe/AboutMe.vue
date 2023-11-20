@@ -1,7 +1,12 @@
 <template>
   <div class="flex-container">
     <h1 class="header">{{ $t("header_about") }}</h1>
-    <p class="text">{{ $t("text_about") }}</p>
+    <div>
+      <p class="text">{{ $t("text_about_partOne") }}</p>
+      <p class="text">{{ $t("text_about_partTwo") }}</p>
+      <p class="text">{{ $t("text_about_partThree") }}</p>
+      <p class="text">{{ $t("text_about_partFour") }}</p>
+    </div>
   </div>
 </template>
 
@@ -20,6 +25,7 @@ export default { name: "AboutMe" };
 
 .text {
   width: 540px;
+  margin: 0;
 }
 
 .flex-container {

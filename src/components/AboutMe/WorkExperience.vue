@@ -6,17 +6,21 @@
       <div class="description">
         <div class="container-description">
           <p class="header-description">{{ $t("position") }}:</p>
-          <p class="text-description">{{ $t("crowe_position_about") }}</p>
+          <p class="text-description" :style="themeStyles">
+            {{ $t("crowe_position_about") }}
+          </p>
         </div>
         <div class="container-description">
           <p class="header-description">{{ $t("description") }}:</p>
-          <p class="text-description">
+          <p class="text-description" :style="themeStyles">
             {{ $t("crowe_description_about") }}
           </p>
         </div>
         <div class="container-description">
           <p class="header-description">{{ $t("achievements") }}:</p>
-          <p class="text-description">{{ $t("crowe_achievements_about") }}</p>
+          <p class="text-description" :style="themeStyles">
+            {{ $t("crowe_achievements_about") }}
+          </p>
         </div>
       </div>
     </li>
@@ -25,11 +29,13 @@
       <div class="description">
         <div class="container-description">
           <p class="header-description">{{ $t("position") }}:</p>
-          <p class="text-description">{{ $t("baker_position_about") }}</p>
+          <p class="text-description" :style="themeStyles">
+            {{ $t("baker_position_about") }}
+          </p>
         </div>
         <div class="container-description">
           <p class="header-description">{{ $t("description") }}:</p>
-          <p class="text-description">
+          <p class="text-description" :style="themeStyles">
             {{ $t("baker_description_about") }}
           </p>
         </div>
@@ -39,7 +45,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    themeStyles() {
+      return {
+        "--color": this.$store.state.isThemeDark
+          ? "rgb(150, 150, 150)"
+          : "rgb(110, 110, 110)",
+      };
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -67,7 +83,7 @@ export default {};
 }
 
 .text-description {
-  color: rgb(130, 130, 130);
+  color: var(--color);
 }
 
 .flex-container {

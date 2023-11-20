@@ -45,12 +45,12 @@ export default {
       return {
         "--background-color": this.$store.state.isThemeDark
           ? "none"
-          : "#d3d3d3",
+          : "#E0E0E0",
         "--border-color": this.$store.state.isThemeDark
           ? "1px solid grey"
           : "none",
         "--shadow": this.$store.state.isThemeDark
-          ? "0 20px 16px -16px rgba(42, 156, 104, 0.6)"
+          ? "0 20px 16px -16px rgba(194, 137, 60, 0.8)"
           : "0 20px 16px -16px rgba(0, 0, 0, 0.6)",
       };
     },
@@ -69,7 +69,8 @@ export default {
   padding: 10px;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: var(--shadow);
   }
 }
@@ -103,13 +104,14 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  background: #2a9c68;
+  background: #c2893c;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease-in-out 0s;
 
-  &:hover {
-    background: #236547;
+  &:hover,
+  &:focus {
+    background: #854f04;
   }
 }
 

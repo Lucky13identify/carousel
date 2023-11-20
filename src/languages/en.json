@@ -10,7 +10,10 @@
   "button_main": "Learn more",
 
   "header_about": "Let's get acquainted!",
-  "text_about": "My name is Dmytro, and I am a full-stack developer with experience in various technologies. I have successfully completed projects involving different libraries, technologies, and frameworks, including the website you are currently browsing. What sets me apart is my persistence and unwavering goal to achieve success. I always deliver work on time and ensure that projects are completed either on schedule or even ahead of deadlines, as I understand the importance of timelines. My ability to work in a team and effectively manage time guarantees that tasks are accomplished with maximum efficiency. I don't stop until the job is done. Let's build the future together and achieve great results!",
+  "text_about_partOne": "Hello!",
+  "text_about_partTwo": "My name is Dmytro.",
+  "text_about_partThree": "I am a full-stack developer with a successful track record of completing projects that encompass various libraries, technologies, and frameworks. This website is also a product of my work. My main advantage is persistence and an unwavering goal to achieve success. I have excellent timing during the work process, ensuring that projects are completed on time and even ahead of schedule, as I understand the value of time. The drive for results motivates me to finish every process successfully.",
+  "text_about_partFour": "I will be a valuable asset to your company, and together we will achieve great results!",
 
   "education_header_about": "Education",
   "goit_about": "IT School 'GoIT'",

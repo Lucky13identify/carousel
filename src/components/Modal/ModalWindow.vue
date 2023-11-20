@@ -1,69 +1,77 @@
 <template>
-  <div
-    class="overlay"
-    @click="closeModalOverlay"
-    :style="themeStyles"
-    v-if="$store.state.oneProject.name"
-  >
-    <div class="modal">
-      <div class="button-container">
-        <button class="close" type="button" @click="closeModalButton">
-          <svg class="icon" height="20 " width="20">
-            <use :href="icon + '#cross'"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="img-container">
-        <img class="image" :src="$store.state.oneProject.img" />
-      </div>
-      <div class="name-container">
-        <h2 v-if="$store.state.oneProject.name">
-          {{ getProjectName($store.state.oneProject) }}
-        </h2>
-        <p v-if="$store.state.oneProject.type" class="tech-skill">
-          {{ getProjectType($store.state.oneProject) }}
+  <transition name="fade" appear>
+    <div
+      class="overlay"
+      @click="closeModalOverlay"
+      :style="themeStyles"
+      v-if="$store.state.oneProject.name"
+    >
+      <div v-if="$store.state.isModalOpen" class="modal">
+        <div class="button-container">
+          <button class="close" type="button" @click="closeModalButton">
+            <svg class="icon" height="20 " width="20">
+              <use :href="icon + '#cross'"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="img-container">
+          <img class="image" :src="$store.state.oneProject.img" />
+        </div>
+        <div class="name-container">
+          <h2 v-if="$store.state.oneProject.name">
+            {{ getProjectName($store.state.oneProject) }}
+          </h2>
+          <p v-if="$store.state.oneProject.type" class="tech-skill">
+            {{ getProjectType($store.state.oneProject) }}
+          </p>
+        </div>
+        <p v-if="$store.state.oneProject.notes" class="project-notes">
+          <span class="fat-header">{{ $t("notes_modal") }} </span
+          >{{ getProjectNote($store.state.oneProject) }}
         </p>
+        <h3>{{ $t("description_modal") }}</h3>
+        <p
+          v-if="$store.state.oneProject.description"
+          class="project-description"
+        >
+          {{ getProjectDescription($store.state.oneProject) }}
+        </p>
+        <h3>{{ $t("stack_modal") }}</h3>
+        <ul class="tech-container">
+          <li
+            class="tech-skill"
+            v-for="tech in this.$store.state.oneProject.tech_stack"
+            :key="tech.id"
+          >
+            {{ tech }}
+          </li>
+        </ul>
+        <div class="link-container">
+          <a
+            v-if="$store.state.oneProject.repo_link"
+            target="_blank"
+            class="link-button"
+            :href="$store.state.oneProject.repo_link"
+            >{{ $t("button_front_modal") }}</a
+          >
+          <a
+            v-if="$store.state.oneProject.backend_link"
+            target="_blank"
+            class="link-button"
+            :href="$store.state.oneProject.backend_link"
+            >{{ $t("button_back_modal") }}</a
+          >
+          <a
+            v-if="$store.state.oneProject.page_link"
+            target="_blank"
+            class="link-button"
+            :href="$store.state.oneProject.page_link"
+            >{{ $t("button_live_modal") }}</a
+          >
+        </div>
       </div>
-      <p v-if="$store.state.oneProject.notes" class="project-notes">
-        <span class="fat-header">{{ $t("notes_modal") }} </span
-        >{{ getProjectNote($store.state.oneProject) }}
-      </p>
-      <h3>{{ $t("description_modal") }}</h3>
-      <p v-if="$store.state.oneProject.description" class="project-description">
-        {{ getProjectDescription($store.state.oneProject) }}
-      </p>
-      <h3>{{ $t("stack_modal") }}</h3>
-      <ul class="tech-container">
-        <li
-          class="tech-skill"
-          v-for="tech in this.$store.state.oneProject.tech_stack"
-          :key="tech.id"
-        >
-          {{ tech }}
-        </li>
-      </ul>
-      <div class="link-container">
-        <a
-          v-if="$store.state.oneProject.repo_link"
-          class="link-button"
-          :href="$store.state.oneProject.repo_link"
-          >{{ $t("button_front_modal") }}</a
-        >
-        <a
-          v-if="$store.state.oneProject.backend_link"
-          class="link-button"
-          :href="$store.state.oneProject.backend_link"
-          >{{ $t("button_back_modal") }}</a
-        >
-        <a
-          v-if="$store.state.oneProject.page_link"
-          class="link-button"
-          :href="$store.state.oneProject.page_link"
-          >{{ $t("button_live_modal") }}</a
-        >
-      </div>
-    </div>
-  </div>
+    </div></transition
+  >
 </template>
 
 <script>
@@ -73,6 +81,7 @@ export default {
   data() {
     return {
       icon,
+      show: true,
     };
   },
   methods: {
@@ -116,7 +125,7 @@ export default {
           ? "rgba(40, 40, 40, 1)"
           : "#f5f5f5",
         "--color": this.$store.state.isThemeDark ? "white" : "black",
-        "--color-tech": this.$store.state.isThemeDark ? "white" : "#303030",
+        "--color-tech": this.$store.state.isThemeDark ? "white" : "#FFFFFF",
         "--icon": this.$store.state.isThemeDark ? "white" : "black",
         "--overlay": this.$store.state.isThemeDark
           ? "rgba(42, 156, 104, 0.2)"
@@ -134,6 +143,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 .overlay {
   position: fixed;
   overflow-y: auto;
@@ -164,7 +182,8 @@ export default {
   fill: var(--icon);
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #2a9c68;
   }
 }
@@ -217,7 +236,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(42, 156, 104, 0.5);
+  background-color: rgba(194, 137, 60, 0.5);
   color: var(--color-tech);
   padding: 8px;
   border-radius: 20px;
@@ -240,13 +259,14 @@ export default {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  background: #2a9c68;
+  background: #c2893c;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease-in-out 0s;
 
-  &:hover {
-    background: #236547;
+  &:hover,
+  &:focus {
+    background: #854f04;
   }
 }
 

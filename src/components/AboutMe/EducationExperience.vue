@@ -3,28 +3,34 @@
   <ul class="flex-container">
     <li class="flex-element">
       <h3 class="subtitle">{{ $t("goit_about") }} (2022 - 2023)</h3>
-      <p class="description">{{ $t("goit_description_about") }}</p>
+      <p class="description" :style="themeStyles">
+        {{ $t("goit_description_about") }}
+      </p>
     </li>
     <li class="flex-element">
       <h3 class="subtitle">{{ $t("franko_about") }} (2021 - 2023)</h3>
-      <p class="description">{{ $t("franko_description_about") }}</p>
+      <p class="description" :style="themeStyles">
+        {{ $t("franko_description_about") }}
+      </p>
     </li>
     <li class="flex-element">
       <h3 class="subtitle">{{ $t("krok_about") }} (2018 - 2019)</h3>
-      <p class="description">
+      <p class="description" :style="themeStyles">
         {{ $t("krok_description_about") }}
       </p>
     </li>
     <li class="flex-element">
       <h3 class="subtitle">{{ $t("ntu_about") }} (2018 - 2021)</h3>
-      <p class="description">{{ $t("ntu_description_about") }}</p>
+      <p class="description" :style="themeStyles">
+        {{ $t("ntu_description_about") }}
+      </p>
     </li>
     <li class="flex-element">
       <h3 class="subtitle">
         {{ $t("ktek_about") }}
         (2014 - 2018)
       </h3>
-      <p class="description">
+      <p class="description" :style="themeStyles">
         {{ $t("ktek_description_about") }}
       </p>
     </li>
@@ -32,7 +38,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    themeStyles() {
+      return {
+        "--color": this.$store.state.isThemeDark
+          ? "rgb(150, 150, 150)"
+          : "rgb(110, 110, 110)",
+      };
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -43,9 +59,6 @@ export default {};
   line-height: 1.4;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-}
-.description {
-  color: rgb(90, 90, 90);
 }
 
 .subtitle {
@@ -66,6 +79,7 @@ export default {};
 
 .description {
   width: 450px;
+  color: var(--color);
 }
 
 .flex-element:not(:last-child) {

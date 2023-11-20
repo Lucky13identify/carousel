@@ -83,6 +83,7 @@ export default {
   width: 200px;
   padding: 0;
   gap: 30px;
+  justify-content: flex-end;
   /* margin-left: 200px; */
 }
 
@@ -116,7 +117,8 @@ export default {
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--bg-color);
     fill: var(--fill-color);
   }

@@ -78,25 +78,15 @@ export default {};
 
 .hero-link {
   cursor: pointer;
-  background-color: #2a9c68;
+  background-color: #c2893c;
   color: white;
   padding: 10px;
   border-radius: 12px;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* opacity: 0; // Начальное состояние элемента
-  animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) 4s forwards; // 4s задержка перед анимацией
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  &:hover,
+  &:focus {
+    background-color: #854f04;
   }
-
-  &:hover {
-    background-color: #236547;
-  } */
 }
 </style>

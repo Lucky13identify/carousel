@@ -26,7 +26,7 @@ export default {
   computed: {
     themeStyles() {
       return {
-        "--color": this.$store.state.isThemeDark ? "#2a9c68" : "white",
+        "--color": this.$store.state.isThemeDark ? "#c2893c" : "white",
       };
     },
   },
@@ -41,7 +41,8 @@ export default {
   padding-bottom: 20px;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--color);
     transform: scale(1.1);
   }
