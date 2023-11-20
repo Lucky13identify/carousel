@@ -1,6 +1,6 @@
 <template>
   <li class="project" :style="themeStyles">
-    <a class="project-link" :href="project.page_link">
+    <a class="project-link" :href="project.page_link" target="_blank">
       <div class="img-container">
         <img
           width="350"
