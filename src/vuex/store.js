@@ -9,6 +9,8 @@ const store = createStore({
       projects: [],
       oneProject: {},
       isModalOpen: false,
+      isModalPhoneOpen: false,
+      isModalPhoneContactsOpen: false,
       isThemeDark: JSON.parse(storedTheme),
       isLanguageEng: false,
     };
@@ -16,6 +18,12 @@ const store = createStore({
   mutations: {
     openModal(state, payload) {
       state.isModalOpen = payload;
+    },
+    openModalMenu(state, payload) {
+      state.isModalPhoneOpen = payload;
+    },
+    openModalContacts(state, payload) {
+      state.isModalPhoneContactsOpen = payload;
     },
     changeTheme(state, payload) {
       state.isThemeDark = payload;

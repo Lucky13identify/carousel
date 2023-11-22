@@ -71,15 +71,20 @@ export default {
 .subtitle {
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .header-description {
-  display: flex;
-  justify-content: end;
+  text-align: end;
+  width: 150px;
 }
 
 .text-description {
@@ -94,24 +99,29 @@ export default {
 
 .description {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 5px;
 }
 
 .container-description {
   display: flex;
+
   gap: 10px;
 }
 
-.header-description {
-  width: 130px;
-}
-
 .text-description {
-  width: 400px;
+  width: 100%;
   text-align: justify;
 }
+.flex-element {
+  font-size: 16px;
 
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
 .flex-element:not(:last-child) {
   border-bottom: 2px solid #7b7b7b;
   padding-bottom: 30px;

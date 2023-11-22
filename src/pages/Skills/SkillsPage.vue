@@ -4,13 +4,12 @@
       <div class="container">
         <h2 class="skills-header">{{ $t("tech_header_skills") }}</h2>
         <div class="flex-container">
+          <TechSkills />
+          <LibrariesSkills />
           <BuildersSkills />
           <DatabasesSkills />
           <FeaturesSkills />
-
           <LibrariesForProjectsSkills />
-          <LibrariesSkills />
-          <TechSkills />
         </div>
         <div class="soft-container">
           <div>

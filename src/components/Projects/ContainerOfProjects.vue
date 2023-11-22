@@ -29,7 +29,16 @@ export default {
 
 .flex-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 </style>

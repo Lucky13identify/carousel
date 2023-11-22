@@ -1,12 +1,14 @@
 <template>
   <section class="hero">
     <div class="container hero-container animate__animated">
-      <img
-        class="photo"
-        src="../../../src/assets/imges/my-photo.jpg"
-        width="380"
-        alt="Dmytro Smirnov photo"
-      />
+      <div class="img-container">
+        <img
+          class="photo"
+          src="../../../src/assets/imges/my-photo.jpg"
+          width="380"
+          alt="Dmytro Smirnov photo"
+        />
+      </div>
       <div class="hero-info">
         <p class="hero-name">
           {{ $t("name_main") }}
@@ -32,9 +34,24 @@ export default {};
 <style lang="scss" scoped>
 .hero-container {
   display: flex;
-  gap: 20px;
-  animation-name: fadeIn;
-  animation-duration: 1.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+  }
+  @media screen and (min-width: 1200px) {
+    /* gap: 20px; */
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+  }
 }
 .hero {
   padding-top: 80px;
@@ -45,25 +62,73 @@ export default {};
 }
 
 .hero-name {
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 33px;
+  line-height: 1.2;
   letter-spacing: 0px;
-  margin: 0px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0px;
+    margin: 0px;
+  }
 }
 
 .hero-work {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 130px;
+  line-height: 1.5;
   letter-spacing: 0px;
-  margin: 0px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 130px;
+    letter-spacing: 0px;
+    margin: 0px;
+  }
   /* animation-delay: 1s; */
 }
 
 .hero-info {
-  margin-top: 60px;
-  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    text-align: left;
+    margin-top: 0px;
+    width: 720px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 800px;
+  }
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    /* margin-right: 60px; */
+    /* justify-content: center; */
+    width: 50%;
+  }
 }
 
 .hero-description {

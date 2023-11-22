@@ -164,18 +164,34 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
+  width: 400px;
   height: 90%;
   border-radius: 15px;
   background: var(--background-color);
   padding: 20px;
   color: var(--color);
   overflow-y: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 90%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+    height: 90%;
+  }
 }
 
 .adding-container {
+  margin-top: 20px;
   display: flex;
+  justify-content: center;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .icon {
@@ -184,7 +200,7 @@ export default {
 
   &:hover,
   &:focus {
-    fill: #2a9c68;
+    fill: #c2893c;
   }
 }
 
@@ -204,9 +220,17 @@ export default {
 
 .name-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .button-container {
@@ -228,8 +252,13 @@ export default {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .tech-skill {
@@ -275,8 +304,16 @@ export default {
 }
 .link-container {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+
+  justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-end;
+  }
 }
 </style>

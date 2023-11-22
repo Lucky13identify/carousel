@@ -20,6 +20,7 @@
     "vue-router": "^4.2.5",
     "vue-spinner": "^1.0.4",
     "vue-styled-components": "^1.6.0",
+    "vuetify": "^3.4.2",
     "vuex": "^4.1.0"
   },
   "devDependencies": {

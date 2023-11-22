@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+
 import { createRouter, createWebHashHistory } from "vue-router";
 
 // import SkillsPage from "./pages/Skills/SkillsPage.vue";

@@ -1,6 +1,6 @@
 <template>
   <div class="container-style animate__animated" :style="themeStyles">
-    <div v-if="this.$store.state.projects.length > 0" class="container">
+    <div v-if="this.$store.state.projects.length > 0">
       <ContainerOfProjects />
     </div>
     <div v-else class="flex-container"><PulseLoader /></div>

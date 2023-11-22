@@ -11,7 +11,9 @@
 </template>
 
 <script>
-export default { name: "AboutMe" };
+export default {
+  name: "AboutMe",
+};
 </script>
 
 <style lang="scss" scoped>
@@ -24,7 +26,6 @@ export default { name: "AboutMe" };
 }
 
 .text {
-  width: 540px;
   margin: 0;
 }
 
@@ -33,5 +34,13 @@ export default { name: "AboutMe" };
   flex-direction: column;
   gap: 30px;
   text-align: justify;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 </style>

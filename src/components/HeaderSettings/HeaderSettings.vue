@@ -84,6 +84,13 @@ export default {
   padding: 0;
   gap: 30px;
   justify-content: flex-end;
+
+  @media screen and (min-width: 768px) {
+    width: 120px;
+    gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
   /* margin-left: 200px; */
 }
 

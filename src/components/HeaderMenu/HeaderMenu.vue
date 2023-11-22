@@ -34,6 +34,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.list-item {
+  margin-top: 8px;
+  font-size: 30px;
+  line-height: 1.4;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
 .link {
   position: relative;
   width: 100%;

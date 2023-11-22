@@ -5,7 +5,14 @@
         <div class="about-container">
           <AboutMe />
           <div class="video-container">
-            <video controls width="540" height="340">
+            <video v-if="isWideScreen" controls width="520" height="320">
+              <source
+                src="../../assets/video/Dmytro_Smirnov.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <video v-else controls width="380" height="340">
               <source
                 src="../../assets/video/Dmytro_Smirnov.mp4"
                 type="video/mp4"
@@ -30,6 +37,9 @@ import WorkExperience from "../../components/AboutMe/WorkExperience.vue";
 
 export default {
   name: "AboutMePage",
+  data() {
+    return { isWideScreen: window.innerWidth > 768 };
+  },
   components: {
     AboutMe,
     EducationExperience,
@@ -52,7 +62,14 @@ export default {
 <style lang="scss" scoped>
 .info-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 200px;
+  }
 }
 .about-me {
   padding-top: 40px;
@@ -71,15 +88,28 @@ export default {
 
 .about-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 80px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
   margin-top: 40px;
 }
 </style>

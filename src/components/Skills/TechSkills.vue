@@ -44,6 +44,12 @@
         </svg>
         <p>Node</p>
       </li>
+      <li class="item">
+        <svg class="icon" height="30 " width="30">
+          <use :href="icon + '#spinner9'"></use>
+        </svg>
+        <p>Express</p>
+      </li>
     </ul>
   </div>
 </template>

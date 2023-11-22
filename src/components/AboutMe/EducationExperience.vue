@@ -64,22 +64,56 @@ export default {
 .subtitle {
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  width: 450px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    width: 450px;
+  }
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .description {
-  width: 450px;
+  font-size: 16px;
+  width: 100%;
   color: var(--color);
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.flex-elemen {
+  width: 100%;
 }
 
 .flex-element:not(:last-child) {
