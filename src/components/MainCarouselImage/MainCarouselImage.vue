@@ -7,6 +7,7 @@
         width="300"
         :src="image.download_url"
         :alt="image.author"
+        loading="lazy"
       />
       <button
         v-if="$store.state.images.length > 0"
