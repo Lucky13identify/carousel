@@ -1,66 +1,40 @@
 import { createStore } from "vuex";
-import { getAllProjects, setOneProject } from "./operations";
-
-const storedTheme = localStorage.getItem("isThemeDark");
+import { getImages } from "./operations";
 
 const store = createStore({
   state() {
     return {
-      projects: [],
-      oneProject: {},
-      isModalOpen: false,
-      isModalPhoneOpen: false,
-      isModalPhoneContactsOpen: false,
-      isThemeDark: JSON.parse(storedTheme),
-      isLanguageEng: false,
+      images: [],
+      selectedImages: [],
     };
   },
   mutations: {
-    openModal(state, payload) {
-      state.isModalOpen = payload;
+    getImagesInStore(state, payload) {
+      state.images = payload;
     },
-    openModalMenu(state, payload) {
-      state.isModalPhoneOpen = payload;
+    addToSelectedImages(state, payload) {
+      state.selectedImages.push(payload);
     },
-    openModalContacts(state, payload) {
-      state.isModalPhoneContactsOpen = payload;
-    },
-    changeTheme(state, payload) {
-      state.isThemeDark = payload;
-    },
-    changeLanguage(state, payload) {
-      state.isLanguageEng = payload;
-    },
-    setServerData(state, payload) {
-      state.projects = payload;
-    },
-    setOneProject(state, payload) {
-      state.oneProject = payload;
-    },
-    deleteOneProject(state) {
-      state.oneProject = {};
+    removeFromSelectedImages(state, payload) {
+      console.log(payload);
+      const index = state.selectedImages.findIndex(
+        (selectedImage) => selectedImage.id === payload.id
+      );
+
+      if (index !== -1) {
+        state.selectedImages.splice(index, 1);
+      }
     },
   },
   actions: {
-    fetchDataFromServer({ commit }) {
-      // Ваш запрос на сервер может выглядеть так
-      // Здесь предполагается использование библиотеки Axios для выполнения запроса
-      getAllProjects()
+    fetchData({ commit }) {
+      getImages()
         .then((response) => {
-          // После успешного ответа от сервера вызываем мутацию для обновления данных
-          commit("setServerData", response);
+          commit("getImagesInStore", response);
         })
         .catch((error) => {
           console.error("Ошибка при запросе данных с сервера:", error);
         });
-    },
-    async fetchProjectFromServer({ commit }, projectId) {
-      try {
-        const response = await setOneProject(projectId);
-        commit("setOneProject", response);
-      } catch (error) {
-        console.error("Ошибка при запросе данных с сервера:", error);
-      }
     },
   },
 });

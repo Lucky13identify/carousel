@@ -4,15 +4,16 @@ body {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.06em;
-  color: white;
+  color: black;
   margin: 0;
 
   background-image: linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
+      rgba(47, 48, 58, 0.9),
+      rgba(47, 48, 58, 0.9)
     ),
-    url(https://res.cloudinary.com/dici0468p/image/upload/v1698775443/noutbuk_didzhej_oborudovanie_212416_1920x1200_dme1gb.jpg);
+    url(https://res.cloudinary.com/dici0468p/image/upload/v1700249376/deals/nochnoj_gorod_vid_sverhu_ogni_goroda_134887_1024x768_l3omdr.jpg);
+  background-size: cover;
 }
 
 li {
@@ -51,18 +52,19 @@ a {
 }
 
 .container {
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    width: 480px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
   }
 }

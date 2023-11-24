@@ -2,8 +2,7 @@
 node_modules
 /dist
 
-# Ignore projects.json file
-projects.json
+
 
 # local env files
 .env.local

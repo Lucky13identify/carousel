@@ -1,64 +1,57 @@
+<!-- App.vue -->
+
 <template>
-  <HeaderComponent />
-  <RouterView />
-  <!-- <AboutMePage /> -->
-  <!-- <MainPage /> -->
-  <!-- <SkillsPage /> -->
-  <teleport to="#modal">
-    <transition name="fade">
-      <ModalWindow v-if="$store.state.isModalOpen"
-    /></transition>
-  </teleport>
-  <teleport to="#modal">
-    <transition name="fade-left" class="animate__animated">
-      <ModalMenu v-if="$store.state.isModalPhoneOpen"
-    /></transition>
-  </teleport>
-  <teleport to="#modal">
-    <transition name="fade-right" class="animate__animated">
-      <ModalContact v-if="$store.state.isModalPhoneContactsOpen"
-    /></transition>
-  </teleport>
-  <!-- <ProjectsPage /> -->
+  <div v-if="$store.state.images.length > 0" class="container">
+    <MainCarousel />
+    <div v-if="$store.state.selectedImages.length !== 0">
+      <SelectedCarousel />
+    </div>
+    <div v-else class="selected-text">
+      <p>There will be a list of your favorite images.</p>
+    </div>
+  </div>
+  <div v-else class="loader"><PulseLoader /></div>
 </template>
 
 <script>
-import HeaderComponent from "./components/Header/HeaderComponent.vue";
-import ModalMenu from "./components/ModalMenu/ModalMenu";
-import ModalContact from "./components/ModalContacts/ModalContact";
-// import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
-// import SkillsPage from "./pages/Skills/SkillsPage.vue";
-// import MainPage from "./pages/MainPage/MainPage.vue";
-// import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
-import ModalWindow from "./components/Modal/ModalWindow";
+import "animate.css";
+import PulseLoader from "vue-spinner/src/PulseLoader.vue";
+import MainCarousel from "./components/MainCarousel/MainCarousel";
+import SelectedCarousel from "./components/SelectedCarousel/SelectedCarousel";
 
 export default {
-  name: "App",
   components: {
-    HeaderComponent,
-    // ProjectsPage,
-    // AboutMePage,
-    // SkillsPage,
-    // MainPage,
-    ModalWindow,
-    ModalMenu,
-    ModalContact,
+    MainCarousel,
+    SelectedCarousel,
+    PulseLoader,
+  },
+
+  mounted() {
+    this.$store.dispatch("fetchData");
+    window.addEventListener("resize", () => {});
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.fade-right-enter-active {
-  animation-name: fadeInRight;
-}
-.fade-right-leave-active {
-  animation-name: fadeOutRight;
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  height: 200px;
 }
 
-.fade-left-enter-active {
-  animation-name: fadeInLeft;
-}
-.fade-left-leave-active {
-  animation-name: fadeOutLeft;
+.selected-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  border: 1px solid grey;
+  border-radius: 20px;
+
+  font-weight: 700;
+
+  color: white;
 }
 </style>

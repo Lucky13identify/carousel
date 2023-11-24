@@ -1,22 +1,23 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://654574c2fe036a2fa95452e8.mockapi.io";
+axios.defaults.baseURL = "https://picsum.photos/v2/list";
 
-export const getAllProjects = async () => {
+export const getImages = async () => {
   try {
-    const { data } = await axios.get("/projects");
+    const { data } = await axios.get();
+    // console.log(data);
     return data;
   } catch (error) {
     console.log(error);
   }
 };
 
-export const setOneProject = async (id) => {
-  try {
-    const { data } = await axios.get(`/projects/${id}`);
-    console.log(data);
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-};
+// export const setOneProject = async (id) => {
+//   try {
+//     const { data } = await axios.get(`/projects/${id}`);
+//     console.log(data);
+//     return data;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
