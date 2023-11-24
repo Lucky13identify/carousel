@@ -37,10 +37,10 @@ export default {
 
   computed: {
     visibleSelectedImages() {
-      const start = this.selectedCarousel.currentImageIndex;
-      const end = start + this.selectedCarousel.imagesPerPage;
+      const startIndex = this.selectedCarousel.currentImageIndex;
+      const endIndex = startIndex + this.selectedCarousel.imagesPerPage;
 
-      return this.$store.state.selectedImages.slice(start, end);
+      return this.$store.state.selectedImages.slice(startIndex, endIndex);
     },
 
     isFirstSelectedImage() {
@@ -96,8 +96,8 @@ export default {
 <style lang="scss" scoped>
 .image-container {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   height: 200px;
 }
 </style>

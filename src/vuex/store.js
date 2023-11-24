@@ -16,7 +16,6 @@ const store = createStore({
       state.selectedImages.push(payload);
     },
     removeFromSelectedImages(state, payload) {
-      console.log(payload);
       const index = state.selectedImages.findIndex(
         (selectedImage) => selectedImage.id === payload.id
       );

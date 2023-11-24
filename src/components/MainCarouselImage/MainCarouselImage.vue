@@ -33,6 +33,17 @@ export default {
     };
   },
 
+  props: {
+    image: {
+      type: Object,
+      required: true,
+    },
+    isLastImage: {
+      type: Boolean,
+      required: true,
+    },
+  },
+
   computed: {
     isSelected() {
       return this.$store.state.selectedImages.some(
@@ -46,18 +57,14 @@ export default {
       const isAlreadySelected = this.$store.state.selectedImages.some(
         (selectedImage) => selectedImage.id === this.image.id
       );
-      console.log(isAlreadySelected);
+
       if (isAlreadySelected) {
-        // Image is already in selectedImages, remove it
         this.$store.commit("removeFromSelectedImages", this.image);
       } else {
-        // Image is not in selectedImages, add it
         this.$store.commit("addToSelectedImages", this.image);
       }
     },
   },
-
-  props: ["image", "isLastImage"],
 };
 </script>
 
@@ -65,43 +72,49 @@ export default {
 .image-element {
   border-radius: 20px;
 }
-.dark-image {
-  filter: grayscale(100%) blur(1px);
-}
 
 .image-element:not(.dark-image) {
   transform: scale(1.2);
 }
 
+.dark-image {
+  filter: grayscale(100%) blur(1px);
+}
+
 .image-container {
   position: relative;
-  background-color: grey;
-  border-radius: 20px;
+
   width: 100%;
   height: 200px;
+
+  border-radius: 20px;
+
+  background-color: grey;
 }
 
 .image-button {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+
   bottom: 2%;
   left: 2%;
   width: 30px;
   height: 30px;
+
   border-radius: 50%;
   border: none;
+
   fill: white;
-  cursor: pointer;
   background-color: transparent;
+  cursor: pointer;
 
   &.selected {
     fill: red;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: red;
     animation-name: heartBeat;
   }

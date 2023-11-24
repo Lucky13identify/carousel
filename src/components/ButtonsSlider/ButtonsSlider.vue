@@ -2,7 +2,7 @@
   <div class="button-container">
     <button
       type="button"
-      class="button-slider animate__animated"
+      class="button-slider"
       @click="prevImage"
       :disabled="isFirstImage"
     >
@@ -12,7 +12,7 @@
     </button>
     <button
       type="button"
-      class="button-slider animate__animated"
+      class="button-slider"
       @click="nextImage"
       :disabled="isLastImage"
     >
@@ -32,7 +32,24 @@ export default {
       icon,
     };
   },
-  props: ["prevImage", "nextImage", "isFirstImage", "isLastImage"],
+  props: {
+    prevImage: {
+      type: Function,
+      required: true,
+    },
+    nextImage: {
+      type: Function,
+      required: true,
+    },
+    isFirstImage: {
+      type: Boolean,
+      required: true,
+    },
+    isLastImage: {
+      type: Boolean,
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -49,10 +66,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 30px;
   height: 30px;
+
   border: none;
   border-radius: 50%;
+
   background-color: transparent;
   cursor: pointer;
   fill: white;
