@@ -12,8 +12,22 @@ body {
       rgba(47, 48, 58, 0.9),
       rgba(47, 48, 58, 0.9)
     ),
-    url(https://res.cloudinary.com/dici0468p/image/upload/v1700249376/deals/nochnoj_gorod_vid_sverhu_ogni_goroda_134887_1024x768_l3omdr.jpg);
-  background-size: cover;
+    url(https://res.cloudinary.com/dici0468p/image/upload/v1700827001/nochnoj_gorod_vid_sverhu_ogni_goroda_134887_1350x2400_mitm5n.jpg);
+  background-size: 130%;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.9),
+        rgba(47, 48, 58, 0.9)
+      ),
+      url(https://res.cloudinary.com/dici0468p/image/upload/v1700249376/deals/nochnoj_gorod_vid_sverhu_ogni_goroda_134887_1024x768_l3omdr.jpg);
+    background-size: 200%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-size: cover;
+  }
 }
 
 li {
