@@ -6,7 +6,6 @@
         :key="image.id"
         :image="image"
         :is-last-image="index !== visibleMainImages.length - 1"
-        class="animate__animated animate__slideInDown"
       />
     </transition-group>
   </ul>

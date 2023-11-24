@@ -1,6 +1,6 @@
 <template>
   <li class="image-list">
-    <div class="image-container">
+    <div class="image-container animate__animated animate__slideInRight">
       <img
         class="image-element"
         :class="{ 'dark-image': isLastImage }"

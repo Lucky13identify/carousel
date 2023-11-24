@@ -1,5 +1,3 @@
-<!-- App.vue -->
-
 <template>
   <div v-if="$store.state.images.length > 0" class="container">
     <MainCarousel />
@@ -12,7 +10,7 @@
   </div>
   <div v-else class="loader"><PulseLoader /></div>
 </template>
-<!-- sdds -->
+
 <script>
 import "animate.css";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
