@@ -12,7 +12,7 @@
   </div>
   <div v-else class="loader"><PulseLoader /></div>
 </template>
-
+<!-- sdds -->
 <script>
 import "animate.css";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
